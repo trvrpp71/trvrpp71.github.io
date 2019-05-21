@@ -1,0 +1,190 @@
+/* CIT 230 - Wassup Weather Project */
+
+body { 
+    font-size: 100%; 
+    font-family: 'Lato', sans-serif;
+    color:black;
+		width:100%;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Merriweather', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	columns: #232323;
+	transition: color 0.3s ease;
+}
+a:hover{
+	color:tomato;
+
+}
+header {
+	text-align:center;
+	background-color:#D9CB04;
+	padding:0;
+}
+
+header img {
+	float:left;
+	width: 75%;
+}
+
+header h1 {
+	position: absolute;
+	font-size: 150%;
+	color:#4D5922;
+	margin-left:120px;
+	margin-top:30px;
+	padding-bottom:0;
+}
+
+main h2{
+	text-align:center;	
+}
+
+section img {
+	width: 100%;
+	height: auto;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+footer {
+	text-align:center;
+	padding:0;
+
+}
+.clearfix {
+	overflow: auto;
+}
+
+.motto h3 {
+	font-size: 80%;
+	color:#6D96A6;
+	font-style: italic;
+	position: absolute;
+	margin-top:60px;
+	margin-left: 150px;
+	padding-top:0;
+
+}
+
+.townpage{
+	position: relative;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+.townpage_article {
+	border:2px solid black;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.townpage_article img{
+	width=80%;
+	padding-left:10px;
+}
+
+.townpage_article h3, h4 {
+	margin:0px;
+	padding-left:10px;
+}
+
+.townpage_article h4 {
+	font-family:"Lato";
+	font-size:50%;
+}
+
+.townpage_article p {
+	margin:10px;
+
+}
+.weather_summary {
+	position:absolute;
+	bottom:5px;
+	left:20px;
+	background-color: #6D96A6;
+	color: white;
+	padding:0px;
+	width: 50%;
+	border: 1px solid black;
+}
+.weather_summary h3 {
+	font-size:80%;
+	margin:5px;
+}
+.weather_summary ul{
+	font-size: 70%;
+	list-style:none; 
+	margin:5px;
+	padding:0px;	
+}
+
+/* burger menu */
+#menuToggle{
+	display:block;
+	position: relative;
+	z-index 1;
+	-webkit-user-select:none;
+	user-select:none;
+	border:1px solid black;
+}
+
+/* Just a quick hamburger*/
+#menuToggle div {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: black;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#menuToggle H3 {
+	width:20%;
+	border:1px solid red;
+}
+
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+	position: absolute;
+  top: 0px;
+	left: 0px;
+	opacity: 1;/*hide the checkbox */
+	z-index: 2; /* and place it over the hamburger */
+}
+
+#contact_info {
+	background-color: #BF7E04;
+	padding-top:2px;
+}
+
+#contact_info p {
+	font-size:70%;
+	padding:0px;
+	margin:0px;
+}
+
+#contact_info a {
+	text-decoration:none;
+}
+#site_info {
+	background-color:#BF7534;
+	color:white;
+	margin:0;
+	padding:0;
+
+}
+#site_info p {
+	font-size:75%;
+	margin-top:5px;
+	padding:0;
+
+}
