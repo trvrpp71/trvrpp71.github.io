@@ -8,30 +8,15 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {font-family: 'Merriweather', sans-serif;}
 header {
-	text-align:center;
 	background-color:#D9CB04;
 	padding:0;
 }
-header img {float:left;width: 75%;}
-
-header h1 {
-	position: absolute;
-	font-size: 150%;
-	color:#4D5922;
-	margin-left:120px;
-	margin-top:30px;
-	padding-bottom:0;
-}
+header img {float:left;width:50%;}
 
 main h2{
 	text-align:center;	
 }
 
-nav {
-	margin:0 auto;
-	max-width:760px;
-	background-color: #000;
-}
 section img {
 	width: 100%;
 	height: auto;
@@ -48,6 +33,14 @@ footer {
 	overflow: auto;
 }
 
+.site-name {
+	position:absolute;
+	right:0;
+	left:0;
+	margin-right:auto;
+	margin-left:auto;
+}
+
 .motto h3 {
 	font-size: 80%;
 	color:#6D96A6;
@@ -62,28 +55,33 @@ footer {
 .navigation {
 	list-style:none;
 	text-align: center;
+	margin:0;
+	padding:0;
 }
-.navigation li:first-child {display:block;}
-	
-.navigation li {display:none;}
-.naviation a {
-	display:block;
-	color:#fff;
-	padding: .75rem;
-	text-align:center;
+.navigation li:first-child {display:block;background-color:yellow;}
+.navigation li {
+	display:none; /*this hides the menu*/
+	background-color:cyan; /*menu color*/
+	padding:5px;
+}
+.navigation li a {
 	text-decoration: none;
+	color:black;
+	
 }
 .navigation a:hover {
-	color: #000;
-	background-color: #fff;
+	color:green; /*text*/
+	background-color:red;
 	font-weight:700;
 }
 
 .responsive li {display:block;}
 @media only screen and (min-width:45em){
-	.navigation li:first-child {display:none;}
-	.navigation li {display:inline-block;margin-right:1rem;}
-	.navigation li a {color:yellow;}
+.navigation li:first-child {display:none;}
+.navigation li {
+	display:inline-block;
+	margin-right:1rem;
+}
 }
 
 .townpage{
