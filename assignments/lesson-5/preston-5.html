@@ -8,11 +8,15 @@
         <meta name="description" content="Wassup Weather Project by Trevor Pope BYU-Idaho">
 		<!-- load fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lato%7cMerriweather" rel="stylesheet">
+        <!-- load scripts-->
+        <script src="scripts/menu.js"></script>
         <!-- load css stylesheet -->
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/small-5.css"/>
         <link rel="stylesheet" href="css/large-5.css"/>
+
     </head>
+
     <body>
         <header class="clearfix">
             <img src="images/logo-100.jpg" alt="Logo">
@@ -20,18 +24,20 @@
             <div class="motto">
                 <h3>I wanna go play</h3>
             </div> 
+
         </header>
-       
-       <nav class="nav">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li class="current"><a href="#">Preston</a></li>
-				<li><a href="#">Soda Springs</a></li>
-				<li><a href="#">Fish Haven</a></li>
-				<li><a href="#">Storm Center</a></li>
-				<li><a href="#">Gallery</a></li>
-			</ul>
-       </nav>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;Menu </a></li>
+                <li><a href="#" title="Home">Home</a></li>
+                <li class="active"><a href="#" title="Preston">Preston</a></li>
+                <li><a href="#" title="Soda springs">Soda Springs</a></li>
+                <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+                <li><a href="#" title="Storm Center">Storm Center</a></li>
+                <li><a href="#" title="Gallery">Gallery</a></li>
+            </ul>
+       </nav>       
 
        <main>
             <section class="townpage">
