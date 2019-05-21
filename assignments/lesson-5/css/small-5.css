@@ -11,7 +11,6 @@ header {
 	background-color:#D9CB04;
 	padding:0;
 }
-header img {float:left;width:50%;}
 
 main h2{
 	text-align:center;	
@@ -22,10 +21,15 @@ footer {
 	padding:0;
 
 }
-.clearfix {
-	overflow: auto;
+
+.top{
+	background:red:
 }
 
+}
+.logo-img{
+	position: absolute;
+}
 .site-name {
 	position:absolute;
 	right:0;
