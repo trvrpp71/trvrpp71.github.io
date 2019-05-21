@@ -17,13 +17,6 @@ main h2{
 	text-align:center;	
 }
 
-section img {
-	width: 100%;
-	height: auto;
-	margin-top:10px;
-	margin-bottom:10px;
-}
-
 footer {
 	text-align:center;
 	padding:0;
@@ -38,7 +31,8 @@ footer {
 	right:0;
 	left:0;
 	margin-right:auto;
-	margin-left:auto;
+	margin-left:160px;
+	font-size:90%
 }
 
 .motto h3 {
@@ -47,7 +41,7 @@ footer {
 	font-style: italic;
 	position: absolute;
 	margin-top:60px;
-	margin-left: 150px;
+	margin-left: 160px;
 	padding-top:0;
 
 }
@@ -84,20 +78,53 @@ footer {
 }
 }
 
-.townpage{
+/*.town-intro{
 	position: relative;
 	margin-bottom:10px;
 	margin-top:10px;
-}
+	border: 1px dashed red;
+}*/
 
-.townpage_article {
-	border:2px solid black;
-	margin-top:10px;
-	margin-bottom:10px;
+.weatherDiv {
+	margin:10px auto;
+	position:relative;
+	border: 1px dashed cyan;
+	width:500px;
+	height:300px;
 }
-.townpage_article img{
-	width=80%;
-	padding-left:10px;
+.weather-img {
+	margin:10px auto;
+	background-color: #eee;
+	border: 1px solid #333;
+	width: 100%;
+	height: 250px;
+}
+.weather_summary {
+	position: absolute;
+	top:25px;
+	left:20px;
+	background: #ffffff;
+	border: 1px solid black;
+	opacity: 0.6;
+	padding: .5rem;
+	box-shadow: 0 0 30px #777;
+}
+.weather_summary h3 {margin-top:0;margin-bottom:5px;}
+.weather_summary p {margin-bottom:2px;}
+
+.town-article {
+	position:relative;
+	border:1px solid black;
+	margin:10px auto;
+	width:500px;
+	height:400px;
+}
+.article-img{
+	margin:10px auto;
+	background-color: brown;
+	border: 1px solid #333;
+	width: 100%;
+	height: 150px;
 }
 
 .townpage_article h3, h4 {
@@ -114,26 +141,10 @@ footer {
 	margin:10px;
 
 }
-.weather_summary {
-	position:absolute;
-	bottom:5px;
-	left:20px;
-	background-color: #6D96A6;
-	color: white;
-	padding:0px;
-	width: 50%;
-	border: 1px solid black;
-}
-.weather_summary h3 {
-	font-size:80%;
-	margin:5px;
-}
-.weather_summary ul{
-	font-size: 70%;
-	list-style:none; 
-	margin:5px;
-	padding:0px;	
-}
+
+
+
+
 
 #contact_info {
 	background-color: #BF7E04;
