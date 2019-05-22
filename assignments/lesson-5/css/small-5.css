@@ -58,7 +58,7 @@ footer {
 }
 .navigation li:first-child {display:block;background-color:yellow;}
 .navigation li {
-	display:none; /*this hides the menu*/
+	display:none;
 	background-color:cyan; /*menu color*/
 	padding:5px;
 }
@@ -74,12 +74,12 @@ footer {
 }
 
 .responsive li {display:block;}
-@media only screen and (min-width:45em){
-.navigation li:first-child {display:none;}
-.navigation li {
-	display:inline-block;
-	margin-right:1rem;
-}
+  @media only screen and (min-width:45em){
+  .navigation li:first-child {display:none;}
+  .navigation li {
+	  display:inline-block;
+	  margin-right:1rem;
+  }
 }
 
 /*.town-intro{
