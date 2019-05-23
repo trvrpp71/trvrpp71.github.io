@@ -5,8 +5,8 @@ body {
 	font-family: 'Lato', sans-serif;
 	color:black;
 }
+
 h1,h2,h3,h4,h5,h6 {font-family: 'Merriweather', sans-serif;}
-header {background-color:#D9CB04;}
 main h2{text-align:center;}
 footer {
 	text-align:center;
@@ -14,35 +14,37 @@ footer {
 }
 
 /*header styling*/
-.top{
-	background: #BF7E04;
-  height:200px;
+  .top{
+	  background: #BF7E04;
+    height:200px;
+  }
+  .top img{
+	  position: relative ;
+	  border:1px dashed red;
+  	width:250px;
+   	margin-left:20px;
+  	margin-top:25px;
+  }
+  .site-name {
+  	font-weight: 50%;
+  	position: absolute;
+    left:300px;
+    top:50px;
+  }
+  .motto h3 {
+  	color:#6D96A6;
+  	font-style: italic;
+  	position: absolute;
+  	left:300px;
+  	top:100px;
+  }
 }
-.top img{
-	position: relative ;
-	border:1px dashed red;
-	width:250px;
-	margin-left:20px;
-	margin-top:25px;
-}
-.site-name {
-	font-weight: 50%;
-	position: absolute;
-  left:300px;
-  top:50px;
-}
-.motto h3 {
-	color:#6D96A6;
-	font-style: italic;
-	position: absolute;
-	left:300px;
-	top:100px;
-}
+
 
 /*nav styling*/
 
 .responsive li {display:block;}
-  @media only screen and (max-width:760px){
+  @media only screen  and (max-width:760px){
 		.navigation {
 		list-style:none;
 		text-align: center;
@@ -67,7 +69,6 @@ footer {
 		background-color: white;
 		font-weight:700;
 	}
-	.active a {background-color: darkblue;}
 }
 
 /*weather summary box */
