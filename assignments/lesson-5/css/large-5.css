@@ -4,21 +4,10 @@ body {
     font-size: 100%; 
     font-family: 'Lato', sans-serif;
     color:black;
-	
 }
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Merriweather', sans-serif;
-}
-
-header {
-	background-color:#D9CB04;
-}
-
-main h2{
-	text-align:center;	
-}
-
+h1,h2,h3,h4,h5,h6 {font-family: 'Merriweather', sans-serif:}
+header {background-color:#D9CB04;}
+main h2{text-align:center;}
 footer {
 	text-align:center;
 	padding:0;
