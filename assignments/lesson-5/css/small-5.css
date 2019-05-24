@@ -64,19 +64,6 @@ footer {
 			text-align:center;
 		}
 	 }
-  
-
-	/*@media screen and (max-width:560px){
-		.site-name h3 {
-		  color:#6D96A6;
-  	  font-style: italic;
-			 left:auto;
-			 padding:0;
-			 margin:0;
-		}
-	}*/
-}
-
 
 /*nav styling*/
 
@@ -136,12 +123,17 @@ footer {
 .weather_summary h3 {margin-top:0;margin-bottom:5px;}
 .weather_summary p {margin-bottom:2px;}
 
+/*turn off 5day summary */
+.fdf {display:none;}
+.fdf_summary {display:none;}
+
+/*style the article */
 .town-article {
 	position:relative;
 	border:1px solid black;
 	margin:10px auto;
-	width:500px;
-	height:400px;
+	width:90%;
+	height:auto;
 }
 .article-img{
 	margin:10px auto;
@@ -150,20 +142,10 @@ footer {
 	width: 100%;
 	height: 150px;
 }
-
-.townpage_article h3, h4 {
-	margin:0px;
-	padding-left:10px;
-}
-
-.townpage_article h4 {
-	font-family:"Lato";
-	font-size:50%;
-}
-
-.townpage_article p {
+.town-article p {
 	margin:10px;
-
+	padding:5px;
+	text-align: justify;
 }
 
 

@@ -5,7 +5,7 @@ body {
     font-family: 'Lato', sans-serif;
     color:black;
 }
-h1,h2,h3,h4,h5,h6 {font-family: 'Merriweather', sans-serif:}
+h1,h2,h3,h4,h5,h6 {font-family: 'Merriweather', sans-serif;}
 main h2{text-align:center;}
 footer {
 	text-align:center;
@@ -17,7 +17,6 @@ footer {
   background: #BF7E04;
   height:200px;
 }
-
 .top img{
 	position: relative ;
 	border:1px dashed red;
@@ -94,8 +93,58 @@ footer {
 .weather_summary h3 {margin-top:0;margin-bottom:5px;}
 .weather_summary p {margin-bottom:2px;}
 
+/*5day forcast styling*/
+.fdf_summary {
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.fdf h3 {text-align:center;}
+.fdf_summary p{
+	padding-right:10px;
+	padding-left:10px;
+	border:1px solid black;
+	text-align:center;
+	background-color: #777;
+	font-weight: bold;
+}
+.fdf_summary p img {
+	width:125px;
+	height:auto;
+}
 
+/*style town article*/
+.clearfix::after {
+	content: "";
+	clear:both;
+	display:table;
+}
+.left_column {
+	width:49%;
+	float:left;
+	padding:10px;
+	border: 1px dashed blueviolet;
+} 
+.right_column {
+	width:45%;
+	float:right;
+	padding:10px;
+	border:1px solid black;
+}
+.article-img {
+	display: flex;
+	align-items:center;
+	margin:10px auto;
+	background-color: #eee;
+	border: 1px solid #333;
+	width:auto;
+	height: 250px;
+	
 
+}
+
+#section_1 {padding:25px; border:1px dashed green;}
 
 
 #contact_info {
