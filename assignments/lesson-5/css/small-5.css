@@ -15,8 +15,8 @@ footer {
 
 /*header styling*/
   .top{
-	  background: #BF7E04;
-    height:200px;
+	background: #BF7E04;
+    height:220px;
   }
   .top img{
 	  position: relative ;
@@ -25,26 +25,63 @@ footer {
    	margin-left:20px;
   	margin-top:25px;
   }
-  .site-name {
-  	font-weight: 50%;
-  	position: absolute;
+  .site-name h1 {
+		position: absolute;
     left:300px;
-    top:50px;
-  }
-  .motto h3 {
+		top:50px;
+		border: 1px dashed black;
+	}
+
+	.motto h3 {
   	color:#6D96A6;
   	font-style: italic;
   	position: absolute;
   	left:300px;
   	top:100px;
-  }
+	}
+
+	 @media screen and (max-width:560px){
+		.site-name h1 {
+			position: static;
+			/*display:block;*/
+			width:auto;
+			font-size:2em;
+			top:150px;
+			left: 50%;
+			padding:0;
+			margin:0 auto;
+			text-align:center;
+			border: 1px dashed white;
+		}
+		.motto h3 {
+			position:static;
+			display:block;
+			font-size: .9em;
+			color:#6D96A6;
+			font-style: italic;
+		  padding:0;
+			margin:0;
+			text-align:center;
+		}
+	 }
+  
+
+	/*@media screen and (max-width:560px){
+		.site-name h3 {
+		  color:#6D96A6;
+  	  font-style: italic;
+			 left:auto;
+			 padding:0;
+			 margin:0;
+		}
+	}*/
 }
 
 
 /*nav styling*/
 
 .responsive li {display:block;}
-  @media only screen  and (max-width:760px){
+  @media screen  and (max-width:760px){
 		.navigation {
 		list-style:none;
 		text-align: center;
