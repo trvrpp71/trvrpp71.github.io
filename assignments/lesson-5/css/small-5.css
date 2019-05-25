@@ -16,7 +16,7 @@ footer {
 /*header styling*/
   .top{
 	background: #BF7E04;
-    height:220px;
+    height:150px;
   }
   .top img{
 	  position: relative ;
@@ -34,11 +34,14 @@ footer {
   	color:#6D96A6;
   	font-style: italic;
   	position: absolute;
-  	left:300px;
-  	top:100px;
+  	left:350px;
+  	top:90px;
 	}
 
 	 @media screen and (max-width:560px){
+		 .top {
+			 height:210px;
+		 }
 		.site-name h1 {
 			position: static;
 			/*display:block;*/

@@ -20,7 +20,6 @@ footer {
   height:150px;
 }
 .top img{
-	/*position: relative ;*/
 	float:left;
 	width:250px;
 	margin-left:25px;
@@ -30,7 +29,7 @@ footer {
 	/*position: relative;*/
 	margin-left:400px;
 	padding-top:40px;
-  
+
 }
 .motto h3 {
 	color:#6D96A6;
@@ -130,29 +129,29 @@ footer {
 	width:49%;
 	float:left;
 	padding:10px;
-	border: 1px dashed blueviolet;
 } 
+.left-column p{
+	text-align: justify;
+}
 .right-column {
 	width:45%;
 	float:right;
 	padding:10px;
-	border:1px solid black;
 }
 .article-img img {
-	display: flex;
-	align-items:center;
+	display:block;
 	margin:10px auto;
-	background-color: #eee;
-	border: 1px solid #333;
-	width:auto;
-	height: 250px;
-	
-
+  max-width: 100%;
+	height: auto;
 }
 
 #contact_info {
 	background-color: #BF7E04;
 	padding-top:2px;
+}
+#contact_info img{
+	padding:10px;
+	margin:10px;
 }
 
 #contact_info p {
