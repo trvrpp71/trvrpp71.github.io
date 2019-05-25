@@ -57,7 +57,7 @@ footer {
 			position:static;
 			display:block;
 			font-size: .9em;
-			color:#6D96A6;
+			color:#ffffff;
 			font-style: italic;
 		  padding:0;
 			margin:0;
@@ -89,7 +89,7 @@ footer {
 		color:white;
 	}
 	.navigation a:hover {
-		color:green; /*text*/
+		color:#D9CB04; /*text*/
 		background-color: white;
 		font-weight:700;
 	}
@@ -140,11 +140,10 @@ footer {
 }
 
 #section3 { 
-	background-color:blue;
 	border: 1px solid white;
 	padding-left:10px;
 	padding-right:10px;
-	color:white;
+	color:black;
 }
 
 /*style the contact and footer */
