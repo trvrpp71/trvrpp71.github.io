@@ -96,8 +96,7 @@ footer {
 }
 
 /*weather summary box */
-.weatherDiv { /*container*/
-	margin:10px;
+.weatherDiv {
 	position:relative;
 	border: 1px dashed cyan;
 	width:auto;
@@ -107,6 +106,7 @@ footer {
 	display: block;
 	margin:0 auto;
 	width:100%;
+	height:300px;
 }
 .weather_summary {
 	position: absolute;
@@ -135,7 +135,7 @@ footer {
 	height: 150px;
 }
 
-#section1,#section2,#section3{
+#section2,#section3{
 	margin:10px;
 }
 
