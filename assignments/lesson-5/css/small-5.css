@@ -96,19 +96,18 @@ footer {
 }
 
 /*weather summary box */
-.weatherDiv {
-	margin:10px auto;
+.weatherDiv { /*container*/
+	margin:10px;
 	position:relative;
 	border: 1px dashed cyan;
-	width:500px;
+	width:auto;
 	height:300px;
 }
 .weather-img {
-	margin:10px auto;
-	background-color: #eee;
-	border: 1px solid #333;
-	width: 100%;
-	height: 250px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 .weather_summary {
 	position: absolute;
@@ -127,14 +126,8 @@ footer {
 .fdf {display:none;}
 .fdf_summary {display:none;}
 
-/*style the article */
-.town-article {
-	position:relative;
-	border:1px solid black;
-	margin:10px auto;
-	width:90%;
-	height:auto;
-}
+/*style the article*/
+
 .article-img{
 	margin:10px auto;
 	background-color: brown;
@@ -142,16 +135,12 @@ footer {
 	width: 100%;
 	height: 150px;
 }
-.town-article p {
+
+#section1,#section2,#section3{
 	margin:10px;
-	padding:5px;
-	text-align: justify;
 }
 
-
-
-
-
+/*style the contact and footer */
 #contact_info {
 	background-color: #BF7E04;
 	padding-top:2px;
