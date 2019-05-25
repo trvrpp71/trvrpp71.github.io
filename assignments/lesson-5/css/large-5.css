@@ -3,7 +3,9 @@
 body { 
     font-size: 100%; 
     font-family: 'Lato', sans-serif;
-    color:black;
+		color:black;
+		width:1028px;
+		margin:auto;
 }
 h1,h2,h3,h4,h5,h6 {font-family: 'Merriweather', sans-serif;}
 main h2{text-align:center;}
@@ -15,26 +17,27 @@ footer {
 /*header styling*/
 .top {
   background: #BF7E04;
-  height:200px;
+  height:150px;
 }
 .top img{
-	position: relative ;
-	border:1px dashed red;
+	/*position: relative ;*/
+	float:left;
 	width:250px;
-	margin-left:20px;
+	margin-left:25px;
 	margin-top:25px;
 }
 .site-name {
-  position: absolute;
-  left:300px;
-  top:50px;
+	/*position: relative;*/
+	margin-left:400px;
+	padding-top:40px;
+  
 }
 .motto h3 {
 	color:#6D96A6;
 	font-style: italic;
 	position: absolute;
-	left:300px;
-	top:100px;
+	margin-left:450px;
+	top:80px;
 }
 
 /*nav styling*/
@@ -67,11 +70,14 @@ footer {
 
 /*weather summary box styling*/
 .weatherDiv {
-	margin:10px auto;
 	position:relative;
 	border: 1px dashed cyan;
-	width:80%;
+	width:auto;
 	height:300px;
+	background-image: url('../images/bckgrnd.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+
 }
 .weather-img {
 	margin:10px auto;
@@ -120,19 +126,19 @@ footer {
 	clear:both;
 	display:table;
 }
-.left_column {
+.left-column {
 	width:49%;
 	float:left;
 	padding:10px;
 	border: 1px dashed blueviolet;
 } 
-.right_column {
+.right-column {
 	width:45%;
 	float:right;
 	padding:10px;
 	border:1px solid black;
 }
-.article-img {
+.article-img img {
 	display: flex;
 	align-items:center;
 	margin:10px auto;
@@ -143,9 +149,6 @@ footer {
 	
 
 }
-
-#section_1 {padding:25px; border:1px dashed green;}
-
 
 #contact_info {
 	background-color: #BF7E04;
