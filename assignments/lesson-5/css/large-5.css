@@ -58,7 +58,7 @@ footer {
 }
 .navigation a:hover {
 	columns: #d9cb04; /*text*/
-	background-color: white;
+	background-color:#6D96A6;
 	font-weight:700;
 }
 .active {
