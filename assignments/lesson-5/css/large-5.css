@@ -28,15 +28,16 @@ footer {
 .site-name {
 	/*position: relative;*/
 	margin-left:400px;
-	padding-top:40px;
+	padding-top:5px;
+	font-size:1.75em;
 
 }
 .motto h3 {
 	color:#ffffff;
 	font-style: italic;
 	position: absolute;
-	margin-left:450px;
-	top:80px;
+	margin-left:550px;
+	top:90px;
 }
 
 /*nav styling*/
@@ -75,14 +76,6 @@ footer {
 	background-image: url('../images/bckgrnd.jpg');
 	background-repeat: no-repeat;
 	background-size:cover;
-
-}
-.weather-img {
-	margin:10px auto;
-	background-color: #eee;
-	border: 1px solid #333;
-	width: 100%;
-	height: 250px;
 }
 .weather_summary {
 	position: absolute;

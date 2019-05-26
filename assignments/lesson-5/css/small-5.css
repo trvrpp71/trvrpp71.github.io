@@ -15,48 +15,54 @@ footer {
 
 /*header styling*/
   .top{
-	background: #BF7E04;
+	  background: #BF7E04;
     height:150px;
   }
   .top img{
-	  position: relative ;
+		/*position: relative ;*/
+		float:left;
 	 	width:250px;
    	margin-left:20px;
   	margin-top:25px;
-  }
-  .site-name h1 {
-		position: absolute;
-    left:300px;
-		top:50px;
+	}
+	.site-name h1 {
+	  font-size:1.75em;
+	}
+	.site-name{
+		margin-left: 250px;
+		padding-top:40px;
 	}
 
 	.motto h3 {
-  	color:#6D96A6;
+  	color:#ffffff;
   	font-style: italic;
   	position: absolute;
-  	left:350px;
-  	top:90px;
+  	left:320px;
+		top:80px;
+		font-size:1em;
 	}
 
 	 @media screen and (max-width:560px){
 		 .top {
-			 height:210px;
+			 height:200px;
+		 }
+		 .site-name{
+			 margin-left:5%;
+			 padding-top:140px;
 		 }
 		.site-name h1 {
-			position: static;
-			/*display:block;*/
+			display:block;
 			width:auto;
-			font-size:2em;
+			font-size:1.25em;
 			top:150px;
-			left: 50%;
 			padding:0;
-			margin:0 auto;
+			margin:0;
 			text-align:center;
 		}
 		.motto h3 {
 			position:static;
 			display:block;
-			font-size: .9em;
+			font-size: .75em;
 			color:#ffffff;
 			font-style: italic;
 		  padding:0;
@@ -99,7 +105,6 @@ footer {
 
 .weatherDiv {
 	position:relative;
-	border: 1px dashed cyan;
 	width:auto;
 	height:300px;
 	background-image: url('../images/bckgrnd_med.jpg');
@@ -140,7 +145,6 @@ footer {
 }
 
 #section3 { 
-	border: 1px solid white;
 	padding-left:10px;
 	padding-right:10px;
 	color:black;
