@@ -58,7 +58,6 @@ footer {
 	padding:14px 16px;
 }
 .navigation a:hover {
-	columns: #d9cb04; /*text*/
 	background-color:#6D96A6;
 	font-weight:700;
 }

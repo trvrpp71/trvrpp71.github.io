@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Wassup Weather</title>
+        <meta name="description" content="Wassup Weather Project by Trevor Pope BYU-Idaho">
+		<!-- load fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato%7cMerriweather" rel="stylesheet">
+        <!-- load scripts-->
+        <script src="scripts/menu.js"></script>
+        <!-- load css stylesheet -->
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" media="screen and (max-width:760px)" href="css/small-6.css"/>
+        <link rel="stylesheet" media="screen and (min-width:760px)" href="css/large-6.css"/>
+    </head>
+
+    <body>
+        <header class="top"> <!--container-->
+            <img src="images/logo_img.gif" alt="Logo">
+             <div class="site-name">
+              <h1>Wassup Weather</h1>
+            </div>  
+            <div class="motto">
+              <h3>I wanna go play</h3>
+            </div> 
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <!--&#9776 is the HTML uni code for the burger menu-->
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;Menu </a></li>
+                <li><a href="#" title="Home">Home</a></li>
+                <li class="active"><a href="#" title="Preston">Preston</a></li>
+                <li><a href="#" title="Soda springs">Soda Springs</a></li>
+                <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+                <li><a href="#" title="Storm Center">Storm Center</a></li>
+                <li><a href="#" title="Gallery">Gallery</a></li>
+            </ul>
+       </nav>       
+
+       <main>
+          <section id="section1" class="town-intro">
+            <h2>Preston Idaho</h2>
+              <div class="weatherDiv">
+                <section class="weather_summary">
+				          <h3>Weather Summary</h3>
+				          <p>Currently:</p>
+				          <p>High:</p>
+				          <p>Wind Chill:</p>
+				          <p>Humidity:</p>
+				          <p>Wind Speed:</p>
+                </section>
+              </div>
+           </section>
+
+           <section id="section2" class="fdf">
+              <h3>5 Day Forecast</h3>
+              <section class="fdf_summary">
+                <p>Day 1 <br><img src="images/day_clear.png" alt="clear day"></p>
+                <p>Day 2 <br><img src="images/day_partial_cloud.png" alt="partially cloudy day"></p>
+                <p>Day 3 <br><img src="images/overcast.png" alt="overcast"></p>
+                <p>Day 4 <br><img src="images/overcast.png" alt="overcast"></p>
+                <p>Day 5 <br><img src="images/rain.png" alt="rain"></p>
+              </section>
+            </section>
+
+            <section id="section3" class="clearfix">
+              <article class="left-column">
+                <h3>Cycling to Work? Check out the benefits...</h3>
+			          <h4>by Joe Blough</h4>
+			          <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis dui quam. 
+                  Sed ex diam, scelerisque sed neque vel, mollis condimentum justo. Proin vel semper 
+                  diam. Nunc consequat odio ut purus rhoncus pellentesque. Nunc quis ex neque. 
+                  Vivamus non turpis vel tellus fringilla elementum at sed sem. Nullam vel eleifend velit. 
+                  Vestibulum pellentesque augue sit amet quam blandit, vitae consectetur leo maximus. 
+                  Phasellus finibus risus vitae augue molestie, id scelerisque nunc imperdiet. Donec sit 
+                  amet pellentesque dui, id tincidunt nisl. Maecenas tristique ante pretium tellus convallis 
+                  faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
+                  turpis egestas. Integer euismod iaculis eros, non mollis quam accumsan in.
+                </p>
+             </article>
+           <article class="right-column">
+                <div class="article-img"><img src="../lesson-5/images/bike_flowers_small.jpg" alt="bike & flowers"></div><!---->
+           </article>
+           </section>
+
+       </main>
+
+       <footer>
+            <section id="contact_info">
+                <h5>Wassup Weather</h5>
+                <p>
+                    30 N 1st E <br>
+                    Preston, ID 83263 <br>
+                    phone: 555-555-5555 <br>
+                    email: <a href="mailto:someone@wassupweather.com">someone@wassupweather.com</a>
+                </p>
+                <img src="images/map-100.jpg" alt="weather map">
+            </section>
+            <section id="site_info">
+                <p>&#169;2019 Wassup Weather | Attributions | Trevor Pope </p><br>
+                <script>getDate()</script>
+            </section>
+        </footer>
+	</body>
+</html>

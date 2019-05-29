@@ -73,35 +73,41 @@ footer {
 
 /*nav styling*/
 
-.responsive li {display:block;}
-  @media screen  and (max-width:760px){
-		.navigation {
-		list-style:none;
-		text-align: center;
-		margin:0;
-		padding:0;
-	}
-	.navigation li:first-child {
-		display:block;
-		background-color:black;
-	}
-	.navigation li {
-		display:block;
-		background-color: black; /*menu color*/
-		padding:5px;
-	}
-	.navigation li a {
-		text-decoration: none;
-		color:white;
-	}
-	.navigation a:hover {
-		color:#D9CB04; /*text*/
-		background-color: white;
-		font-weight:700;
-	}
+.navigation {
+	list-style: none;
+	text-align:center;
+	margin:0 auto;
+	width:auto;
+	padding:0;
 }
+.navigation li:first-child {
+  display:block;
+  background-color:black;
+}
+.navigation li {
+	display:none;
+	background-color: black; /*menu color*/
+	padding:5px;
+}
+.navigation li a {
+	text-decoration: none;
+	color:white;
+  }
+.navigation a:hover {
+  color:black; /*text*/
+  background-color:#6D96A6;
+  font-weight:700;
+ }
+.active a {
+ background-color: #4d5922;
+ padding:5px;
+ }
 
-/*weather summary box */
+.responsive li {display:block;}
+
+
+
+ /*weather summary box */
 
 .weatherDiv {
 	position:relative;
