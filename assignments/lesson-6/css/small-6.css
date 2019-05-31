@@ -109,13 +109,13 @@ footer {
 
  /*weather summary box */
 
-main figure.weather {margin:0 2% 0 2%;}
+main figure.weather {position:relative;margin:0 2% 0 2%;}
 main figure.weather img {width:100%;}
 
 .weather_summary {
 	position: absolute;
-	top:350px;
-	left:8%;
+	top:5%;
+	left:2%;
 	background: #ffffff;
 	border: 1px solid black;
 	opacity: 0.6;
