@@ -1,0 +1,189 @@
+/* CIT 230 - Wassup Weather Project */
+
+body { 
+  font-size: 100%; 
+	font-family: 'Lato', sans-serif;
+	color:black;
+}
+
+h1,h2,h3,h4,h5,h6 {font-family: 'Merriweather', sans-serif;}
+main h2{text-align:center;}
+footer {
+	text-align:center;
+	padding:0;
+}
+
+/*header styling*/
+  .top{
+	  background: #BF7E04;
+    height:150px;
+  }
+  .top img{
+		/*position: relative ;*/
+		float:left;
+	 	width:250px;
+   	margin-left:20px;
+  	margin-top:25px;
+	}
+	.site-name h1 {
+	  font-size:1.75em;
+	}
+	.site-name{
+		margin-left: 250px;
+		padding-top:40px;
+	}
+
+	.motto h3 {
+  	color:#ffffff;
+  	font-style: italic;
+  	position: absolute;
+  	left:320px;
+		top:80px;
+		font-size:1em;
+	}
+
+	 @media screen and (max-width:560px){
+		 .top {
+			 height:200px;
+		 }
+		 .site-name{
+			 margin-left:5%;
+			 padding-top:140px;
+		 }
+		.site-name h1 {
+			display:block;
+			width:auto;
+			font-size:1.25em;
+			top:150px;
+			padding:0;
+			margin:0;
+			text-align:center;
+		}
+		.motto h3 {
+			position:static;
+			display:block;
+			font-size: .75em;
+			color:#ffffff;
+			font-style: italic;
+		  padding:0;
+			margin:0;
+			text-align:center;
+		}
+	 }
+
+/*nav styling*/
+
+.navigation {
+	list-style: none;
+	text-align:center;
+	margin:0 auto;
+	width:auto;
+	padding:0;
+}
+.navigation li:first-child {
+  display:block;
+  background-color:black;
+}
+.navigation li {
+	display:none;
+	background-color: black; /*menu color*/
+	padding:5px;
+}
+.navigation li a {
+	text-decoration: none;
+	color:white;
+  }
+.navigation a:hover {
+  color:black; /*text*/
+  background-color:#6D96A6;
+  font-weight:700;
+ }
+.active a {
+ background-color: #4d5922;
+ padding:5px;
+ }
+
+.responsive li {display:block;}
+
+
+
+ /*weather summary box */
+
+.weatherDiv {
+	position:relative;
+	width:auto;
+	height:300px;
+	background-image: url('../images/bckgrnd_med.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.weather_summary {
+	position: absolute;
+	top:25px;
+	left:20px;
+	background: #ffffff;
+	border: 1px solid black;
+	opacity: 0.6;
+	padding: .5rem;
+	box-shadow: 0 0 30px #777;
+}
+.weather_summary h3 {margin-top:0;margin-bottom:5px;}
+.weather_summary p {margin-bottom:2px;}
+
+/*turn off 5day summary */
+.fdf {display:none;}
+.fdf_summary {display:none;}
+
+/*style the article*/
+
+.article-img img {
+	display:block;
+	margin:10px auto;
+  border: 1px solid #333;
+	max-width: 90%;
+	height: 250px;
+	
+}
+
+#section2,#section3{
+	margin:10px;
+}
+
+#section3 { 
+	padding-left:10px;
+	padding-right:10px;
+	color:black;
+}
+
+/*style the contact and footer */
+#contact_info {
+	background-color: #BF7E04;
+	padding-top:2px;
+}
+#contact_info img {
+	padding:10px;
+	margin:10px;
+}
+#contact_info p {
+	font-size:70%;
+	padding:0px;
+	margin:0px;
+}
+
+#contact_info a {
+	text-decoration:none;
+}
+#site_info {
+	background-color:#BF7534;
+	color:white;
+	margin:0;
+	padding:0;
+
+}
+#site_info p {
+	font-size:75%;
+	margin-top:5px;
+	padding:0;
+
+}

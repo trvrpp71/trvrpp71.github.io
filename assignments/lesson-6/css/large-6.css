@@ -4,7 +4,7 @@ body {
     font-size: 100%; 
     font-family: 'Lato', sans-serif;
 		color:black;
-		width:1028px;
+		width:1200px;
 		margin:auto;
 }
 h1,h2,h3,h4,h5,h6 {font-family: 'Merriweather', sans-serif;}
@@ -68,18 +68,13 @@ footer {
 }
 
 /*weather summary box styling*/
-.weatherDiv {
-	position:relative;
-	width:auto;
-	height:300px;
-	background-image: url('../images/bckgrnd.jpg');
-	background-repeat: no-repeat;
-	background-size:cover;
-}
+main figure.weather {margin:0 2% 0 2%;}
+main figure.weather img {width:100%;}
+
 .weather_summary {
 	position: absolute;
-	top:25px;
-	left:20px;
+	top:350px;
+	left:150px;
 	background: #ffffff;
 	border: 1px solid black;
 	opacity: 0.6;

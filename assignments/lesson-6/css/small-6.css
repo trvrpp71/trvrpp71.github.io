@@ -109,19 +109,13 @@ footer {
 
  /*weather summary box */
 
-.weatherDiv {
-	position:relative;
-	width:auto;
-	height:300px;
-	background-image: url('../images/bckgrnd_med.jpg');
-	background-size:cover;
-	background-repeat: no-repeat;
-}
+main figure.weather {margin:0 2% 0 2%;}
+main figure.weather img {width:100%;}
 
 .weather_summary {
 	position: absolute;
-	top:25px;
-	left:20px;
+	top:350px;
+	left:8%;
 	background: #ffffff;
 	border: 1px solid black;
 	opacity: 0.6;

@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato%7cMerriweather" rel="stylesheet">
         <!-- load scripts-->
         <script src="scripts/menu.js"></script>
+        <script src="scripts/currentdate.js"></script>
         <!-- load css stylesheet -->
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" media="screen and (max-width:760px)" href="css/small-6.css"/>
@@ -43,16 +44,18 @@
        <main>
           <section id="section1" class="town-intro">
             <h2>Preston Idaho</h2>
-              <div class="weatherDiv">
-                <section class="weather_summary">
-				          <h3>Weather Summary</h3>
-				          <p>Currently:</p>
-				          <p>High:</p>
-				          <p>Wind Chill:</p>
-				          <p>Humidity:</p>
-				          <p>Wind Speed:</p>
-                </section>
-              </div>
+              <figure class="weather">
+                  <img src="images/hero.jpeg" alt="hero" sizes="80vw"
+                  srcset="images/hero500.jpg 500w, images/hero800.jpg 800w,images/hero1100.jpg 1100w">
+                  <section class="weather_summary">
+				            <h3>Weather Summary</h3>
+				            <p>Currently:</p>
+				            <p>High:</p>
+				            <p>Wind Chill:</p>
+				            <p>Humidity:</p>
+				            <p>Wind Speed:</p>
+                  </section>
+              </figure>
            </section>
 
            <section id="section2" class="fdf">
