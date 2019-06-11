@@ -1,0 +1,44 @@
+/* title */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*-------------BODY--------------*/
+
+
+
+
+/*------------HEADER-------------*/
+
+
+/*----------NAVIGATION-----------*/
+
+
+/*------------MAIN---------------*/
+table {
+	font-family: 'Ubuntu', sans-serif;
+	border-collapse: collapse;
+	text-align: center;
+	margin:2%;
+}
+table th, td {
+	margin:0;
+	padding:.5em;
+	border:1px solid lightgrey;
+}
+table tr:nth-child(odd){background-color:#e7ffed;}
+table tr:nth-child(even) {background-color:#e7f0ed;}
+table thead tr:first-child {font-size: 1.5em;background-color:#7fb9c2;}
+table thead tr:nth-child(2) {background-color:#628ca6 ;color:#fff;}
+table tbody tr:nth-child(5) td:nth-child(1){font-style: italic;}
+table tbody tr:nth-child(4) td:nth-child(3){background-color:#628ca6;color:#fff;}
+tfoot {font-size: .75em;}
+table tfoot tr:first-child {background-color:#7fb9c2;}
+
+
+/*-----------FOOTER--------------*/
+
+
