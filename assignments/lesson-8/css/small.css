@@ -211,6 +211,22 @@ form div#submitBtn{
 	padding-bottom:30px;
 }
 
+main section.thanks {
+	display:flex;
+	min-height: 300px;
+	flex-direction: column;
+	justify-content:flex-start;
+	padding:2%;
+	background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+		radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+		radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+	background-size: 100px 200px;
+	background-repeat: repeat-x;
+}
+
+main section.thanks h2, p {
+	margin:10px 0 0 0;
+	text-align:center;}
 
 /*------------------FOOTER--------------*/
 #contact_info {
