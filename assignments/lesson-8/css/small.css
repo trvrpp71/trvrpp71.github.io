@@ -134,21 +134,22 @@ figure.photo figcaption {text-align: center;font-size:.75rem;}
 
 form fieldset {
 	margin:2rem 2%;
-	border:1px solid green;
+	border:1px solid  #4d5922;
 	border-radius:10px;
 	padding:.5rem 2%;
 }
 
 form legend {
-	color: red;
+	color:#6D96A6;
 	margin: 0 1rem;
 	padding:0 .5rem;
+	text-shadow: 1px 1px 1px #111;
 }
 
 form label.contact,label.storm{
 	display:block;
 	padding-top: 1rem;
-	color:brown;
+	color:#BF7E04;
 	font-size: .8rem;
 }
 
