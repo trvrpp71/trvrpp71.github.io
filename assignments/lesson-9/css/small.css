@@ -229,6 +229,23 @@ main section.thanks h2, p {
 	margin:10px 0 0 0;
 	text-align:center;}
 
+
+main section.towns {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	
+}
+
+main section article {
+	justify-content: center;
+	text-align: center;
+	border:1px solid black;
+	width:50%;
+	margin:2%;
+	padding:2%;
+}
+
 /*------------------FOOTER--------------*/
 #contact_info {
 	background-color: #BF7E04;

@@ -11,6 +11,7 @@
         <!-- load scripts-->
         <script src="scripts/menu.js"></script>
         <script src="scripts/currentdate.js"></script>
+        <script src="scripts/gettown.js"></script>
         <!-- load css stylesheet -->
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/small.css"/>
@@ -33,44 +34,43 @@
             <ul class="navigation">
                 <!--&#9776 is the HTML uni code for the burger menu-->
                 <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;Menu </a></li>
-                <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="preston.html" title="Preston">Preston</a></li>
+                <li class="active"><a href="#" title="Home">Home</a></li>
+                <li ><a href="preston.html" title="Preston">Preston</a></li>
                 <li><a href="#" title="Soda springs">Soda Springs</a></li>
                 <li><a href="#" title="Fish Haven">Fish Haven</a></li>
                 <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
-                <li class="active"><a href="#" title="Gallery">Gallery</a></li>
+                <li><a href="gallery.html" title="Gallery">Gallery</a></li>
             </ul>
        </nav>       
 
        <!--insert content here-->
-      <main>
-        <h2>Gallery</h2>
-        <div class="gallery">
-          <figure><img src="images/weather1_1028.jpg" alt="weather 1"><figcaption>Lightening in field</figcaption></figure>
-          <figure><img src="images/weather2_1028.jpg" alt="weather 1"><figcaption>Beach Sunset</figcaption></figure>
-          <figure><img src="images/weather3_1028.jpg" alt="weather 1"><figcaption>Lightening</figcaption></figure>
-          <figure><img src="images/weather4_1028.jpg" alt="weather 1"><figcaption>Lightening in the mountains</figcaption></figure>
-          <figure><img src="images/weather5_1028.jpg" alt="weather 1"><figcaption>Storm coming</figcaption></figure>
-          <figure><img src="images/weather6_1028.jpg" alt="weather 1"><figcaption>Clouds</figcaption></figure>
-        </div>
-      </main>
+       <main>
+        <section class="towns">
+
+        </section>
+
+            
+       </main>
 
        <footer>
-            <section id="contact_info">
-                <h5>Wassup Weather</h5>
-                <p>
-                    30 N 1st E <br>
-                    Preston, ID 83263 <br>
-                    phone: 555-555-5555 <br>
-                    email: <a href="mailto:someone@wassupweather.com">someone@wassupweather.com</a>
-                </p>
-                <div id = "map"><img src="images/map.png" alt="map"></div>
-            </section>
-            <section id="site_info">
-                <p>&#169;2019 Wassup Weather | Attributions | Trevor Pope </p><br>
-                <script>getDate()</script>
-            </section>
-        </footer>
+         <section id="contact_info">
+          <h5>Wassup Weather</h5>
+          <p>
+              30 N 1st E <br>
+              Preston, ID 83263 <br>
+              phone: 555-555-5555 <br>
+              email: <a href="mailto:someone@wassupweather.com">someone@wassupweather.com</a>
+          </p>
+        <div id = "map"><img src="images/map.png" alt="map"></div>
+      </section>
+        
+        <div id="site_info">
+          <p>&#169;2019 Wassup Weather | Attributions | Trevor Pope </p><br>
+          <script>getDate()</script>
+        </div>
+       </footer>
+
+      <script>getTown()</script>   
 
   </body>
   
