@@ -6,7 +6,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/*---------BODY------------*/
+/*---------GLOBAL BODY------------*/
 
 body { 
   font-size: 16px; 
@@ -14,7 +14,7 @@ body {
   color:black;
 }
 
-/*------------HEADER-------------*/
+/*------------GLOBAL HEADER-------------*/
 
 h1,h2,h3,h4,h5,h6 {font-family: 'Merriweather', sans-serif;}
 main h1, h2 {margin:2% 0 0 2%;}
@@ -36,7 +36,7 @@ footer {
 .company_name h3 {font-size: .9rem; margin:0;}
 
 
-/*-------------NAVIGATION---------------*/
+/*-------------GLOBAL NAVIGATION---------------*/
 
 nav {
 	margin:0 auto;
@@ -79,7 +79,7 @@ nav a:hover {
 
 .responsive li {display:block;}
 
-/*-------------MAIN----------------*/
+/*-------------MAIN TOWN PAGE STYLES ----------------*/
 
  /*weather summary box */
 
@@ -131,6 +131,8 @@ figure.photo figcaption {text-align: center;font-size:.75rem;}
 }
 
 .gallery figure figcaption {display:none;}
+
+/*-------------FORM.HTML STYLES----------------*/
 
 form fieldset {
 	margin:2rem 2%;
@@ -212,6 +214,7 @@ form div#submitBtn{
 	padding-bottom:30px;
 }
 
+/*------------THANKS.HTML STYLES---------------*/
 main section.thanks {
 	display:flex;
 	min-height: 300px;
@@ -229,24 +232,40 @@ main section.thanks h2, p {
 	margin:10px 0 0 0;
 	text-align:center;}
 
-
-main section.towns {
+/*-------------INDEX.HTML STYLES---------------*/
+section.towns {
 	display: flex;
 	flex-direction: column;
-	align-content: center;
-	
+	align-items:stretch;
 }
 
-main section article {
+section article {
 	justify-content: center;
 	text-align: center;
-	border:1px solid black;
-	width:50%;
-	margin:2%;
-	padding:2%;
+	border:1.5px solid black;
+	width:100%;
+	margin-top:2%;
+	margin-bottom:2%;
+	background:lightgrey;
+}
+div.box {
+	margin:10px;
+	padding:5px;
+	background:white;
+	box-shadow: 3px 3px 5px black;
+}
+article div p.p1 {font-size: .75em;font-style: italic;}
+article div h3 {color:#BF7E04;}
+
+article div img {
+	width:100%;
+	margin-top:10px;
+	margin-bottom:0;
+	padding:0;
+	box-shadow: 5px 5px 5px 5px white inset;
 }
 
-/*------------------FOOTER--------------*/
+/*-----------GLOBAL FOOTER--------------*/
 #contact_info {
 	background-color: #BF7E04;
 	padding-top:2px;
