@@ -107,7 +107,10 @@ figure.photo {margin: 2%;}
 figure.photo img {width:100%;}
 figure.photo figcaption {text-align: center;font-size:.75rem;}
 
-
+article div.left p {
+	text-align:justify;
+	text-justify: inter-word;
+}
 
 #section3{margin:0 2%;}
 
@@ -117,6 +120,7 @@ figure.photo figcaption {text-align: center;font-size:.75rem;}
 	color:black;
 }
 
+/*--------------GALLERY PAGE STYLES--------------------*/
 .gallery {
 	display:flex;
 	flex-wrap:wrap;
@@ -258,8 +262,11 @@ article div p.p1 {font-size: .75em;font-style: italic;}
 article div h3 {color:#BF7E04;}
 
 article.index-page p {
-	margin: 0 2%;
-	
+	margin:2%;
+	padding:0;
+	text-align: justify;
+	text-justify:inter-word;
+
 }
 
 article div img {
