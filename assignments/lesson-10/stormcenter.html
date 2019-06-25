@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Wassup Weather</title>
+        <meta name="description" content="Wassup Weather Project by Trevor Pope BYU-Idaho">
+		    <!-- load fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato%7cMerriweather" rel="stylesheet">
+        <!-- load scripts-->
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/updateRating.js"></script>
+        <!-- load css stylesheet -->
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/small.css"/>
+        <link rel="stylesheet" href="css/med.css"/>
+        <link rel="stylesheet" href="css/large.css"/>
+      </head>
+
+    <body>
+        <!--header info-->
+        <header class="header"> 
+          <img src="images/logo_img.png" alt="Logo">
+          <div class="company_name">
+            <h1>Wassup Weather</h1>
+            <h3>I wanna go play</h3>
+          </div> 
+        </header>
+
+        <!--navigation info-->
+        <nav class="clearfix">
+            <ul class="navigation">
+                <!--&#9776 is the HTML uni code for the burger menu-->
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;Menu </a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="preston.html" title="Preston">Preston</a></li>
+                <li><a href="#" title="Soda springs">Soda Springs</a></li>
+                <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+                <li class="active"><a href="#" title="Storm Center">Storm Center</a></li>
+                <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+            </ul>
+       </nav>       
+
+       <!--insert content here-->
+       <main>
+          <h1>Report a Storm!</h1>
+          <form method="get" action="thanks.html">
+            <fieldset>
+              <legend>Contact Information</legend>
+              <label class="contact">First Name* <input type="text" name="fname" pattern="[A-Za-z]{5,}" required></label>
+              <label class="contact">Last Name* <input type="text" name="lname" required></label>
+              <label class="contact">Phone*<input type="tel" name="phone" pattern="[0-9.-]{5,}" required placeholder="5556667777"></label>
+              <label class="contact">Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+              <label class="contact">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Storm Information</legend>
+              <label class="storm">Storm Date <input type="date" name = "sdate"></label>
+              <label class="storm">Storm Type
+                <input type="text" name="storm_types" id="storm_types" list="stypes">
+                <datalist id="stypes">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunder Storm">
+                    <option value="Tornado">
+                </datalist>
+              </label>
+
+              <label for="rating" class="storm">Storm Severity</label> 
+              <input type="range" id="rating" value="5" min="1" max="10" step="1" 
+                  oninput="updateRating(this.value)" onchange="updateRating(this.value)">
+              
+              <span id="ratingvalue"></span>
+
+              <label class="storm">Storm Region
+                <select id="region" name="region">
+                  <option value="" disabled selected>Please select a region &#9662;</option>
+                  <option value="fish_haven">Fish Haven</option>
+                  <option value="preston">Preston</option>
+                  <option value="sugar_city">Sugar City</option>
+                </select>
+              </label>      
+            </fieldset>
+
+            <fieldset>
+              <legend>Anything else we should know?</legend>
+              <div>Are you in danger?</div>
+                <label class="sbs"><input type="radio" name="radio" value="yes">yes</label>
+                <label class="sbs"><input type="radio" name="radio" value="maybe">maybe</label>
+                <label class="sbs"><input type="radio" name="radio" value="no">no</label>
+                <textarea name="notes" placeholder="Type additional comments here:"></textarea>
+            </fieldset>
+            <div id="submitBtn">
+              <input type="submit" name="submit" value="Report The Storm">
+            </div>
+          </form>
+            
+       </main>
+
+       <footer>
+         <section id="contact_info">
+          <h5>Wassup Weather</h5>
+          <p>
+              30 N 1st E <br>
+              Preston, ID 83263 <br>
+              phone: 555-555-5555 <br>
+              email: <a href="mailto:someone@wassupweather.com">someone@wassupweather.com</a>
+          </p>
+          <div id = "map"><img src="images/map.png" alt="map"></div>
+      </section>
+        
+        <div id="site_info">
+          <p>&#169;2019 Wassup Weather | Attributions | Trevor Pope </p><br>
+          <script>getDate()</script>
+        </div>
+       </footer>
+
+  </body>
+  
+</html>
