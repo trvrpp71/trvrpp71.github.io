@@ -12,6 +12,7 @@
         <script src="scripts/menu.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/weather.js"></script>
+        <script src="scripts/forecast.js"></script>
         <!-- load css stylesheet -->
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/small.css"/>
@@ -52,30 +53,19 @@
                   srcset="images/bckgrnd_mob.jpg 500w, images/bckgrnd_med.jpg 800w">
                   <section class="weather_summary">
 				            <h3>Weather Summary</h3>
-				            <div id='current'></div>
-                    <div id="high">:</div>
-				            <div id="chill"></div>
-				            <div id="humidity"></div>
-				            <div id="speed"></div>
+				            <p>Current: <span id='temp'> </span>&degF</p>
+                    <p>High: <span id="temp_max"> </span>&degF</p>
+                    <p>With the wind: <span id="chill"> </span>&degF</p>
+				            <p>Humidity: <span id="humidity"> </span>%</p>
+                    <p>Wind Speed: <span id="speed"> </span>mph</p>
+                    <p>From the <span id="dir"></span></p>
                   </section>
               </figure> 
            </section>
 
-           <section id="section2" class="forecast">
-              <h3>5 Day Forecast</h3>
-              <div class="forecast_imgs">
-                <p>Day 1</p>
-                <p>Day 2</p>
-                <p>Day 3</p>
-                <p>Day 4</p>
-                <p>Day 5</p>
-                <img src="images/day_clear_sm.png" alt="clear day">
-                <img src="images/day_partial_cloud_sm.png" alt="partially cloudy day">
-                <img src="images/overcast_sm.png" alt="overcast">
-                <img src="images/overcast_sm.png" alt="overcast">
-                <img src="images/rain_sm.png" alt="rain">
-              </div>
-            </section>
+          <section class="forecast">
+
+          </section>
 
            <article class="clearfix">
              <div class = "left">
@@ -118,6 +108,8 @@
           <script>getDate()</script>
         </div>
        </footer>
+       <script>forecast()</script>
   </body>
   
 </html>
+

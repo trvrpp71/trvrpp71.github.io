@@ -87,6 +87,7 @@ main figure.weather {position:relative;margin:0;}
 main figure.weather img {width:100%;margin-top:1rem;}
 
 .weather_summary {
+	min-width:25%;
 	position: absolute;
 	top:10%;
 	left:2%;
@@ -98,7 +99,7 @@ main figure.weather img {width:100%;margin-top:1rem;}
 	color:#D9CB04;
 }
 .weather_summary h3 {margin-top:0;margin-bottom:5px;}
-.weather_summary p {margin-bottom:2px;white-space: nowrap;}
+.weather_summary p {margin-bottom:2px;white-space: nowrap;text-align:justify;}
 
 section.forecast {display:none;} /*turn off 5day summary */
 

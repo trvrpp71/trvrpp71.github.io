@@ -23,14 +23,8 @@
 
 
 /*----------- MAIN --------------*/
-section.forecast {display:block;}
-section div.forecast_imgs {
-    display:grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-}
 
-section div.forecast_imgs p {margin:0 0 10px 0; padding:0;text-align: center;}
-section div.forecast_imgs img {justify-self: center;}
+}
 
 .gallery figure {
 	flex-basis: 29%;

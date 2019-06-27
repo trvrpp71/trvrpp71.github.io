@@ -28,6 +28,26 @@
     /*----------- MAIN --------------*/
     .weather_summary {left:8%;}
 
+
+    section.forecast {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+   
+    div.fc {border:1px solid black;text-align:center;margin:0;}
+    
+    h3.fcday {
+        margin:0;
+        padding:2% 0 2% 0;
+        background: #4d5922;
+        color:#D9CB04;
+    }
+
+    p.p1{
+        margin: 0 0 2% 0;
+        padding:0;
+    }
+
     .gallery figure {
         flex-basis: 46%;
     }
