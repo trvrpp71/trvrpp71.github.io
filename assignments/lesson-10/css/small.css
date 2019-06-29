@@ -32,7 +32,7 @@ footer {
   height:100px;
 }
 
-.company_name h1 {font-size: 1.12rem;margin:0;}
+.company_name h1 {font-size: 1.5rem;margin:0;}
 .company_name h3 {font-size: .9rem; margin:0;}
 
 
@@ -96,10 +96,12 @@ main figure.weather img {width:100%;margin-top:1rem;}
 	opacity: 0.9;
 	padding: .5rem;
 	box-shadow: 10px 10px 20px black;
-	color:#D9CB04;
+	/*color:#D9CB04;*/
+	color: #D9CB04;
 }
-.weather_summary h3 {margin-top:0;margin-bottom:5px;}
-.weather_summary p {margin-bottom:2px;white-space: nowrap;text-align:justify;}
+.weather_summary h3 {margin:0 0 4% 0;color: #D9CB04;}
+.weather_summary p {margin: 2% 0 2% 2%;white-space: nowrap;text-align:justify;}
+#temp, #temp_max,#chill,#humidity, #speed, #dir {color:white;}
 
 section.forecast {display:none;} /*turn off 5day summary */
 
@@ -109,17 +111,14 @@ figure.photo img {width:100%;}
 figure.photo figcaption {text-align: center;font-size:.75rem;}
 
 article div.left p {
+	margin:0 2% 0 2%;
 	text-align:justify;
 	text-justify: inter-word;
 }
 
-#section3{margin:0 2%;}
 
-#section3 { 
-	padding-left:10px;
-	padding-right:10px;
-	color:black;
-}
+
+
 
 /*--------------GALLERY PAGE STYLES--------------------*/
 .gallery {
@@ -244,43 +243,43 @@ section.towns {
 	align-items:stretch;
 }
 
-section article {
+.container {
 	justify-content: center;
 	text-align: center;
 	border:1.5px solid black;
-	width:100%;
-	margin-top:2%;
+	width:95%;
+	margin:2%;
 	margin-bottom:2%;
 	background:lightgrey;
 }
-div.box {
-	margin:10px;
-	padding:5px;
+.box {
+	margin:4%;
+	padding:10px;
 	background:white;
 	box-shadow: 3px 3px 5px black;
 }
-article div p.p1 {font-size: .75em;font-style: italic;}
-article div h3 {color:#BF7E04;}
-
-article.index-page p {
-	margin:2%;
-	padding:0;
-	text-align: justify;
-	text-justify:inter-word;
-
-}
-
-article div img {
+.box p.p1 {font-size: .75em;font-style: italic;}
+.box h3 {color:#BF7E04;}
+.box img {
 	width:100%;
 	margin-top:10px;
 	margin-bottom:0;
 	padding:0;
 	box-shadow: 5px 5px 5px 5px white inset;
 }
+.box ul {list-style: none;}
+.box ul li {margin:2%;color:white;}
+
+.events div.box, .preston_events div.box {
+	background:#4d5922;
+	border:1.5px solid black;
+	border-radius: 10px;
+}
 
 /*-----------GLOBAL FOOTER--------------*/
 #contact_info {
 	background-color: #BF7E04;
+	margin-top:4%;
 	padding-top:2px;
 }
 #contact_info img {
@@ -317,6 +316,9 @@ article div img {
 }
 
 #map img{width:75%;}
+
+div#citations {padding-bottom:4%;}
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

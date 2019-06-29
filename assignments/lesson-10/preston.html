@@ -13,6 +13,7 @@
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/weather.js"></script>
         <script src="scripts/forecast.js"></script>
+        <script src="scripts/getPRevents.js"></script>
         <!-- load css stylesheet -->
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/small.css"/>
@@ -53,11 +54,11 @@
                   srcset="images/bckgrnd_mob.jpg 500w, images/bckgrnd_med.jpg 800w">
                   <section class="weather_summary">
 				            <h3>Weather Summary</h3>
-				            <p>Current: <span id='temp'> </span>&degF</p>
-                    <p>High: <span id="temp_max"> </span>&degF</p>
-                    <p>With the wind: <span id="chill"> </span>&degF</p>
-				            <p>Humidity: <span id="humidity"> </span>%</p>
-                    <p>Wind Speed: <span id="speed"> </span>mph</p>
+				            <p>Current: <span id='temp'> </span></p>
+                    <p>High: <span id="temp_max"> </span></p>
+                    <p>With the wind: <span id="chill"> </span></p>
+				            <p>Humidity: <span id="humidity"> </span></p>
+                    <p>Wind Speed: <span id="speed"> </span></p>
                     <p>From the <span id="dir"></span></p>
                   </section>
               </figure> 
@@ -66,6 +67,7 @@
           <section class="forecast">
           <!---this section is populated with forcast.js-->
           </section>
+  
 
            <article class="clearfix">
              <div class = "left">
@@ -89,6 +91,12 @@
               </figure>  
            </article>
             
+           <article class="preston_events">
+            <h4>Preston Town Events</h4>
+            <p>Come join the town for the upcoming events!</p>
+            <script>getPRevents()</script>
+
+           </article>
        </main>
 
        <footer>
@@ -101,6 +109,10 @@
               email: <a href="mailto:someone@wassupweather.com">someone@wassupweather.com</a>
           </p>
         <div id = "map"><img src="images/map.png" alt="map"></div>
+        <div id = "citations">
+          <p>Weather API data for summary and forecast comes from:</p>
+          <p><a href="http://openweathermap.org">Openweathermap.org</p>
+        </div>
       </section>
         
         <div id="site_info">

@@ -31,10 +31,10 @@ weatherObject1.onload=function(){
     };
 
 
-    document.getElementById('temp').innerHTML = tmp;
-    document.getElementById('temp_max').innerHTML = Math.round(weatherInfo.main.temp_max);
-    document.getElementById('humidity').innerHTML = Math.round(weatherInfo.main.humidity);
-    document.getElementById('speed').innerHTML = spd;
-    document.getElementById('chill').innerHTML = wndchll;
+    document.getElementById('temp').innerHTML = tmp + "\u00B0" +"F";
+    document.getElementById('temp_max').innerHTML = Math.round(weatherInfo.main.temp_max)+ "\u00B0" +"F";
+    document.getElementById('humidity').innerHTML = Math.round(weatherInfo.main.humidity)+"%";
+    document.getElementById('speed').innerHTML = spd + 'mph';
+    document.getElementById('chill').innerHTML = wndchll + "\u00B0" +"F";
     document.getElementById('dir').innerHTML = dir;
 }//end of weatherObject1 onload
