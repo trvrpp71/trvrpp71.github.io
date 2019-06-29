@@ -24,17 +24,12 @@
 
 /*----------- MAIN --------------*/
 
+.gallery figure {flex-basis: 29%;}
 
-
-.gallery figure {
-	flex-basis: 29%;
-}
-
-.gallery figure img:hover {
-	box-shadow: 3px 5px 10px black;
-}
+.gallery figure img:hover {box-shadow: 3px 5px 10px black;}
 
 .gallery figure figcaption {display:block;text-align:center;}
+
 /*----------- FOOTER --------------*/
     
 } /* end of media query */
