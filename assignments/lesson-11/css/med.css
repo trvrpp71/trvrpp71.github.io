@@ -1,0 +1,78 @@
+/* CIT 230 - Wassup Weather Project */
+
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+
+    /*----------- BODY --------------*/
+    
+    
+    
+    /*----------- HEADER --------------*/
+    
+    
+    
+    /*----------- NAVIGATION --------------*/
+ 
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: space-between;
+        }
+    nav ul li:first-child {display:none;}
+     
+    nav ul li {display:block;margin:.25rem;}
+   
+    
+    
+    /*----------- MAIN --------------*/
+    .weather_summary {left:8%;}
+
+
+    section.forecast {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+   
+    div.fc {border:1px solid black;text-align:center;margin:0;}
+    
+    h3.fcday {
+        margin:0;
+        padding:2% 0 2% 0;
+        background: #4d5922;
+        color:#D9CB04;
+    }
+
+    p.p1{
+        margin: 0 0 2% 0;
+        padding:0;
+    }
+
+    .gallery figure {
+        flex-basis: 46%;
+    }
+    
+    article div.left {
+        float:left;
+        width:46%;
+    }
+    article figure.photo {
+        float:right;
+        width:46%;
+    }
+   
+    form label.contact input{width:50%;}
+    form textarea {width: 50%;}
+
+    section.towns {flex-direction: row;}
+    section article {
+        margin-top:2%;
+        margin-bottom:2%;
+        margin-left:1%;
+        margin-right:1%;
+    
+    }
+
+    /*----------- FOOTER --------------*/
+        
+} /* end of media query */

@@ -1,0 +1,328 @@
+/* CIT 230 - Wassup Weather Project */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*---------GLOBAL BODY------------*/
+
+body { 
+  font-size: 16px; 
+  font-family: 'Lato', sans-serif;
+  color:black;
+}
+
+/*------------GLOBAL HEADER-------------*/
+
+h1,h2,h3,h4,h5,h6 {font-family: 'Merriweather', sans-serif;}
+main h1, h2 {margin:2% 0 0 2%;}
+footer {
+	text-align:center;
+	padding:0;
+}
+
+.header{
+  display:flex;
+  padding:.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  background: #BF7E04;
+  height:100px;
+}
+
+.company_name h1 {font-size: 1.5rem;margin:0;}
+.company_name h3 {font-size: .9rem; margin:0;}
+
+
+/*-------------GLOBAL NAVIGATION---------------*/
+
+nav {
+	margin:0 auto;
+	padding:0;
+	background-color: #111;
+}
+nav ul {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+nav li {
+	display:none;
+	padding:5px;
+	width:auto;
+	text-align: center;
+
+}nav li:first-child {
+  display:block;
+}
+
+nav a {
+	text-decoration: none;
+	color:#eee;
+  }
+nav a:hover {
+  color:black; /*text*/
+  background-color:#6D96A6;
+  font-weight:700;
+  padding:2px 5px;
+ }
+.active a {
+ background-color: #4d5922;
+ padding:2px 5px;
+ }
+
+.responsive li {display:block;}
+
+/*-------------MAIN TOWN PAGE STYLES ----------------*/
+
+ /*weather summary box */
+
+main figure.weather {position:relative;margin:0;}
+main figure.weather img {width:100%;margin-top:1rem;}
+
+.weather_summary {
+	min-width:25%;
+	position: absolute;
+	top:10%;
+	left:2%;
+	background: #4d5922;
+	border: 1px solid black;
+	opacity: 0.9;
+	padding: .5rem;
+	box-shadow: 10px 10px 20px black;
+	/*color:#D9CB04;*/
+	color: #D9CB04;
+}
+.weather_summary h3 {margin:0 0 4% 0;color: #D9CB04;}
+.weather_summary p {margin: 2% 0 2% 2%;white-space: nowrap;text-align:justify;}
+#temp, #temp_max,#chill,#humidity, #speed, #dir {color:white;}
+
+section.forecast {display:none;} /*turn off 5day summary */
+
+article h2, h3, h4, p {margin: 2%;}
+figure.photo {margin: 2%;}
+figure.photo img {width:100%;}
+figure.photo figcaption {text-align: center;font-size:.75rem;}
+
+article div.left p {
+	margin:0 2% 0 2%;
+	text-align:justify;
+	text-justify: inter-word;
+}
+
+
+
+
+
+/*--------------GALLERY PAGE STYLES--------------------*/
+.gallery {
+	display:flex;
+	flex-wrap:wrap;
+}
+.gallery figure {
+	flex-basis: 96%;
+	margin:1rem 2%;
+}
+
+.gallery figure img {
+	width:100%;
+}
+
+.gallery figure figcaption {display:none;}
+
+/*-------------FORM.HTML STYLES----------------*/
+
+form fieldset {
+	margin:2rem 2%;
+	border:1px solid  #4d5922;
+	border-radius:10px;
+	padding:.5rem 2%;
+}
+
+form legend {
+	color:#6D96A6;
+	margin: 0 1rem;
+	padding:0 .5rem;
+	text-shadow: 1px 1px 1px #111;
+}
+
+form label.contact,label.storm{
+	display:block;
+	padding-top: 1rem;
+	color:#BF7E04;
+	font-size: .8rem;
+}
+
+form label.contact input{
+	-webkit-appearance: none;
+    display:block;
+    font-size:1rem;
+    border:solid 1px #999;
+    border-radius: 4px;
+	padding: .75rem;
+	margin: .5rem 0;
+    color:#555;
+    width:100%;
+    background-color: rgba(0,0,0,0.1)
+}
+
+form label.storm input, select{
+	-webkit-appearance: none;
+	display:block;
+	margin: .5rem 0;
+	padding: .75rem;
+	font-size:1rem;
+	border:solid 1px #999;
+	border-radius: 4px;
+	width:50%;
+	min-width:200px;
+}
+
+
+form input#rating {
+	margin: .5rem 0;
+}
+form span#ratingvalue {
+	margin-left: 1.8rem;
+	padding:.5rem;
+	border: 1px solid #999;
+	border-radius: 5px;
+	color:black;
+}
+
+form label.sbs {
+	display:block;
+	padding:.5rem;
+	margin-left:.75rem;
+}
+form label.sbs input[type="radio"] {margin-right:10px; padding:.5rem;}
+
+form textarea {
+	display:block;
+	font-size:1rem;
+	margin-top:10px;
+	min-height:110px;
+	width:100%;
+	min-width:200px;
+	 
+}
+
+form div#submitBtn{
+	text-align:center;
+	padding-bottom:30px;
+}
+
+/*------------THANKS.HTML STYLES---------------*/
+main section.thanks {
+	display:flex;
+	min-height: 300px;
+	flex-direction: column;
+	justify-content:flex-start;
+	padding:2%;
+	background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+		radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+		radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+	background-size: 100px 200px;
+	background-repeat: repeat-x;
+}
+
+main section.thanks h2, p {
+	margin:10px 0 0 0;
+	text-align:center;}
+
+/*-------------INDEX.HTML STYLES---------------*/
+section.towns {
+	display: flex;
+	flex-direction: column;
+	align-items:stretch;
+}
+
+.container {
+	justify-content: center;
+	text-align: center;
+	border:1.5px solid black;
+	width:95%;
+	margin:2%;
+	margin-bottom:2%;
+	background:lightgrey;
+}
+.box {
+	margin:4%;
+	padding:10px;
+	background:white;
+	box-shadow: 3px 3px 5px black;
+}
+.box p.p1 {font-size: .75em;font-style: italic;}
+.box h3 {color:#BF7E04;}
+.box img {
+	width:100%;
+	margin-top:10px;
+	margin-bottom:0;
+	padding:0;
+	box-shadow: 5px 5px 5px 5px white inset;
+}
+.box ul {list-style: none;}
+.box ul li {margin:2%;color:white;}
+
+.events div.box, .preston_events div.box {
+	background:#4d5922;
+	border:1.5px solid black;
+	border-radius: 10px;
+}
+
+/*-----------GLOBAL FOOTER--------------*/
+#contact_info {
+	background-color: #BF7E04;
+	margin-top:4%;
+	padding-top:2px;
+}
+#contact_info img {
+	padding:10px;
+	margin:10px;
+}
+#contact_info p {
+	font-size:70%;
+	padding:0px;
+	margin:0px;
+}
+
+#contact_info a {
+	text-decoration:none;
+}
+#site_info {
+	background-color:#BF7534;
+	color:white;
+	margin:0;
+	padding:0;
+
+}
+#site_info p {
+	font-size:75%;
+	margin-top:5px;
+	padding:0;
+
+}
+
+#map {
+	width: 100%;
+	padding:0;
+	margin-top:10px;
+}
+
+#map img{width:75%;}
+
+div#citations {padding-bottom:4%;}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }

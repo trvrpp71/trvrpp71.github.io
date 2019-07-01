@@ -1,0 +1,35 @@
+/* CIT 230 - Wassup Weather Project */
+
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+
+
+/*----------- MAIN --------------*/
+
+.gallery figure {flex-basis: 29%;}
+
+.gallery figure img:hover {box-shadow: 3px 5px 10px black;}
+
+.gallery figure figcaption {display:block;text-align:center;}
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
