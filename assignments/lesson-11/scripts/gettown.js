@@ -43,11 +43,11 @@ function getTowns() {
                 myPara3.textContent = 'Population:  ' + towns[i].currentPopulation;
                 myPara4.textContent = 'Annual Rain Fall:  ' +towns[i].averageRainfall + '"';
                 if (i==1){
-                    myImg.src='images/fishhavensm.jpg';
+                    myImg.src='images/fishhavensm.jpg' alt="fish haven img";
                 } else if (i==4) {
-                    myImg.src='images/prestonsm.jpg';
+                    myImg.src='images/prestonsm.jpg' alt="preston img";
                 } else {
-                    myImg.src='images/sodaspringssm.jpg';
+                    myImg.src='images/sodaspringssm.jpg' alt="soda springs img";
                 }
                 
                 /*---create the div with the elements and data---*/
