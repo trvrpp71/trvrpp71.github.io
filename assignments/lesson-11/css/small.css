@@ -272,6 +272,7 @@ section.towns {
 	border:1.5px solid black;
 	border-radius: 10px;
 }
+.events div.box h3 {color:#ffce00;}
 
 /*-----------GLOBAL FOOTER--------------*/
 #contact_info {
@@ -288,13 +289,13 @@ section.towns {
 
 #contact_info a {
 	text-decoration:none;
+	color:white;
 }
 #site_info {
-	background-color:#BF7534;
+	background-color:darkgray;
 	color:white;
 	margin:0;
 	padding:0;
-
 }
 #site_info p {
 	font-size:75%;
