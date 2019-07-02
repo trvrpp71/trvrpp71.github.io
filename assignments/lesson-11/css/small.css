@@ -282,10 +282,7 @@ section.towns {
 	margin-top:4%;
 	padding-top:2px;
 }
-#contact_info img {
-	padding:10px;
-	margin:10px;
-}
+
 #contact_info p {
 	font-size:70%;
 	padding:0px;
@@ -309,15 +306,23 @@ section.towns {
 
 }
 
-#map {
-	width: 100%;
-	padding:0;
-	margin-top:10px;
+.map-wrapper {margin-top:5%; padding:0;}
+
+.map-wrapper .responsive-container {
+	text-align:center;
+	padding:10px;
 }
 
-#map img{width:75%;}
 
-div#citations {padding-bottom:4%;}
+
+
+.map-wrapper .responsive-container img {
+	width:auto;
+	max-width:100%;
+	text-align: center;
+}
+
+div#citations {margin:5%;
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
