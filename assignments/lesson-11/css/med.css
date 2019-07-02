@@ -52,15 +52,20 @@
         flex-basis: 46%;
     }
     
-    article div.left {
-        float:left;
-        width:46%;
-    }
-    article figure.photo {
-        float:right;
-        width:46%;
-    }
+ 
    
+    div.left {grid-template-columns: 50% 50%;}
+    div.left h3 {
+        grid-column-start: 1; 
+        grid-column-end: span col2-end;
+        justify-self: left;
+        margin:2%;
+        padding:0;
+    }
+    
+    div.left h4, p{grid-column-start: 1;padding-left:2%;}
+    figure.photo {align-items: center;}
+
     form label.contact input{width:50%;}
     form textarea {width: 50%;}
 

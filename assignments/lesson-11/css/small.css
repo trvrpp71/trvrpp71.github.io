@@ -110,11 +110,8 @@ figure.photo {margin: 2%;}
 figure.photo img {width:100%;}
 figure.photo figcaption {text-align: center;font-size:.75rem;}
 
-article div.left p {
-	margin:0 2% 0 2%;
-	text-align:justify;
-	text-justify: inter-word;
-}
+div.left {display:grid;}
+div.left p {text-align:justify;	margin: 0 2%;}
 
 
 
@@ -306,7 +303,7 @@ section.towns {
 
 }
 
-.map-wrapper {margin-top:5%; padding:0;}
+.map-wrapper {margin-top:2%; padding:0;}
 
 .map-wrapper .responsive-container {
 	text-align:center;
@@ -320,9 +317,10 @@ section.towns {
 	width:auto;
 	max-width:100%;
 	text-align: center;
+	border: 2px solid black;
 }
 
-div#citations {margin:5%;
+div#citations {margin:4%;
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
