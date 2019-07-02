@@ -62,8 +62,6 @@ function getTowns() {
                 myDiv2.appendChild(myImg);
                 myDiv1.appendChild(myDiv2);
                 section.appendChild(myDiv1);
-
-
             }
         }
     }
