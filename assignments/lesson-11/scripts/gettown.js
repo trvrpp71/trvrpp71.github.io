@@ -43,11 +43,14 @@ function getTowns() {
                 myPara3.textContent = 'Population:  ' + towns[i].currentPopulation;
                 myPara4.textContent = 'Annual Rain Fall:  ' +towns[i].averageRainfall + '"';
                 if (i==1){
-                    myImg.src='images/fishhavensm.jpg' alt="fish haven img";
+                    myImg.src='images/fishhavensm.jpg';
+                    myImg.setAttribute("alt","Fish Haven img");
                 } else if (i==4) {
-                    myImg.src='images/prestonsm.jpg' alt="preston img";
+                    myImg.src='images/prestonsm.jpg';
+                    myImg.setAttribute("alt","Preston img");
                 } else {
-                    myImg.src='images/sodaspringssm.jpg' alt="soda springs img";
+                    myImg.src='images/sodaspringssm.jpg';
+                    myImg.setAttribute("alt","Soda Springs img");
                 }
                 
                 /*---create the div with the elements and data---*/
