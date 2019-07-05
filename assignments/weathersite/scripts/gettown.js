@@ -9,7 +9,6 @@ function getTowns() {
 
     request.onload = function() {
         var towns = request.response;
-        console.log(towns);
         showTowns(towns);
     }
 

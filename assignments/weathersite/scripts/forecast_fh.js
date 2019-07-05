@@ -9,7 +9,7 @@ function fhforecast() {
 
     weatherObject2.onload=function(){
         let forecastInfo=JSON.parse(weatherObject2.responseText);
-        console.log(forecastInfo);
+
 
         for (let i = 0; i < 40; i++){
        

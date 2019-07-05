@@ -8,7 +8,6 @@ function getEvents() {
 
     request.onload = function() {
         var towns = request.response;
-        console.log(towns);
         getEvents(towns);
     }
 

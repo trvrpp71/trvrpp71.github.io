@@ -8,7 +8,6 @@ function getPRevents() {
 
     request.onload = function() {
         var towns = request.response;
-        console.log(towns);
         getPreston(towns);
     }
 

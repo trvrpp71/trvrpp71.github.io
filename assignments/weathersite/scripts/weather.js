@@ -5,7 +5,7 @@ weatherObject1.open('GET',weatherURL,true);
 weatherObject1.send();
 weatherObject1.onload=function(){
     let weatherInfo=JSON.parse(weatherObject1.responseText);
-    console.log(weatherInfo);
+    
 
     var tmp = Math.round(weatherInfo.main.temp);
     var spd = Math.round(weatherInfo.wind.speed);

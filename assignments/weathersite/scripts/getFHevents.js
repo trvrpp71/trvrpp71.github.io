@@ -8,7 +8,6 @@ function getFHevents() {
 
     request.onload = function() {
         var towns = request.response;
-        console.log(towns);
         getFish(towns);
     }
 

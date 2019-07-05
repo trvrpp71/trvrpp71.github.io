@@ -8,7 +8,6 @@ function getSSevents() {
 
     request.onload = function() {
         var towns = request.response;
-        console.log(towns);
         getSoda(towns);
     }
 
