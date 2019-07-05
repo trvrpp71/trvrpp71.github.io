@@ -274,6 +274,12 @@ section.towns {
 }
 .events div.box h3 {color:#ffce00;}
 
+/*---------ATTRIBUTES----------*/
+
+main section.attributes h5,p {margin:2%;}
+main section.attributes p{text-align: left;}
+
+
 /*-----------GLOBAL FOOTER--------------*/
 #contact_info {
 	background-color: #BF7E04;
@@ -320,6 +326,9 @@ section.towns {
 	text-align: center;
 	border: 2px solid black;
 }
+
+
+div#site_info {padding:2%;}
 
 div#citations {margin:4%;}
 

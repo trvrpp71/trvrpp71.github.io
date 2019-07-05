@@ -42,6 +42,7 @@ function getTowns() {
                 myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 myPara3.textContent = 'Population:  ' + towns[i].currentPopulation;
                 myPara4.textContent = 'Annual Rain Fall:  ' +towns[i].averageRainfall + '"';
+                
                 if (i==1){
                     myImg.src='images/fishhavensm.jpg';
                     myImg.setAttribute("alt","Fish Haven img");
@@ -52,6 +53,7 @@ function getTowns() {
                     myImg.src='images/sodaspringssm.jpg';
                     myImg.setAttribute("alt","Soda Springs img");
                 }
+
                 
                 /*---create the div with the elements and data---*/
                 myDiv2.appendChild(myH3);
