@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Wassup Weather</title>
+        <meta name="description" content="Wassup Weather Project by Trevor Pope BYU-Idaho">
+		    <!-- load fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato%7cMerriweather" rel="stylesheet">
+        <!-- load scripts-->
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/forecast.js"></script>
+        <script src="scripts/getPRevents.js"></script>
+        <!-- load css stylesheet -->
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/small.css"/>
+        <link rel="stylesheet" href="css/med.css"/>
+        <link rel="stylesheet" href="css/large.css"/>
+      </head>
+
+    <body>
+        <!--header info-->
+        <header class="header"> 
+          <img src="images/logo_img.png" alt="Logo">
+          <div class="company_name">
+            <h1>Wassup Weather</h1>
+            <h3>I wanna go play</h3>
+          </div> 
+        </header>
+
+        <!--navigation info-->
+        <nav class="clearfix">
+            <ul class="navigation">
+                <!--&#9776 is the HTML uni code for the burger menu-->
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;Menu </a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="preston.html" title="Preston">Preston</a></li>
+                <li><a href="sodasprings.html" title="Soda springs">Soda Springs</a></li>
+                <li class="active"><a href="#" title="Fish Haven">Fish Haven</a></li>
+                <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+                <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+            </ul>
+       </nav>       
+
+       <!--insert content here-->
+       <main>
+          <section id="section1" class="site_info">
+            <h2>Preston Idaho</h2>
+              <figure class="weather">
+                  <img src="images/valley.jpg" alt="Glacier National Park" sizes="80vw"
+                  srcset="images/valley_mob.jpg 500w, images/valley_med.jpg 800w">
+                  <section class="weather_summary">
+				            <h3>Weather Summary</h3>
+				            <p>Current: <span id='temp'> </span></p>
+                    <p>High: <span id="temp_max"> </span></p>
+                    <p>With the wind: <span id="chill"> </span></p>
+				            <p>Humidity: <span id="humidity"> </span></p>
+                    <p>Wind Speed: <span id="speed"> </span></p>
+                    <p>From the <span id="dir"></span></p>
+                  </section>
+              </figure> 
+           </section>
+
+          <section class="forecast">
+          <!---this section is populated with forcast.js-->
+          </section>
+  
+
+           <article class="clearfix">
+              <div class = "left">
+                <h3>Cycling to Work? Check out the benefits...</h3>
+                <h4>by Joe Blough</h4>
+                
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis dui quam. 
+                    Sed ex diam, scelerisque sed neque vel, mollis condimentum justo. Proin vel semper 
+                    diam. Nunc consequat odio ut purus rhoncus pellentesque. Nunc quis ex neque. 
+                    Vivamus non turpis vel tellus fringilla elementum at sed sem. Nullam vel eleifend velit. 
+                    Vestibulum pellentesque augue sit amet quam blandit, vitae consectetur leo maximus. 
+                    Phasellus finibus risus vitae augue molestie, id scelerisque nunc imperdiet. Donec sit 
+                    amet pellentesque dui, id tincidunt nisl. Maecenas tristique ante pretium tellus convallis 
+                    faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
+                    turpis egestas. Integer euismod iaculis eros, non mollis quam accumsan in.
+                </p>
+                <figure class="photo">
+                    <img src="../lesson-7/images/bike_flowers_small.jpg" alt="bike & flowers">
+                    <figcaption>Bike with Flowers</figcaption>
+                  </figure>  
+              </div>
+
+              
+           </article>
+            
+           <article class="preston_events">
+            <h4>Preston Town Events</h4>
+            <p>Come join the town for the upcoming events!</p>
+            <script>getPRevents()</script>
+
+           </article>
+       </main>
+
+       <footer>
+         <section id="contact_info">
+          <h5>Wassup Weather</h5>
+          <p>
+              30 N 1st E <br>
+              Preston, ID 83263 <br>
+              phone: 555-555-5555 <br>
+              email: <a href="mailto:someone@wassupweather.com">someone@wassupweather.com</a>
+          </p>
+          <div id = "citations">
+              <p>Weather API data for summary and forecast comes from:</p>
+              <p><a href="http://openweathermap.org">Openweathermap.org</a></p>
+            </div>
+          <div class = "map-wrapper">
+              <div class = "responsive-container">
+                  <img src="https://www.mapquestapi.com/staticmap/v5/map?key=c2SAQcIxHxnB0UUjxYKfYy9b18smGm6N&center=Preston,ID&zoom=11&scalebar=true" alt="Preston, Idaho">
+              </div>
+            </div>
+ 
+      </section>
+        
+      <div id="site_info">
+        <script>getDate()</script>  
+        <p>&#169Trevor Pope| 2019 Wassup Weather | <a href="attributes.html">Attributes |</a> C230 BYU-Idaho </p>
+          
+      </div>
+       </footer>
+       <script>forecast()</script>
+  </body>
+  
+</html>
+

@@ -11,8 +11,7 @@
         <!-- load scripts-->
         <script src="scripts/menu.js"></script>
         <script src="scripts/currentdate.js"></script>
-        <script src="scripts/gettown.js"></script>
-        <script src="scripts/getevents.js"></script>
+        
 
 
         <!-- load css stylesheet -->
@@ -37,10 +36,10 @@
             <ul class="navigation">
                 <!--&#9776 is the HTML uni code for the burger menu-->
                 <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;Menu </a></li>
-                <li class="active"><a href="#" title="Home">Home</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
                 <li ><a href="preston.html" title="Preston">Preston</a></li>
                 <li><a href="sodasprings.html" title="Soda springs">Soda Springs</a></li>
-                <li><a href="fishhaven" title="Fish Haven">Fish Haven</a></li>
+                <li><a href="fishhaven.html" title="Fish Haven">Fish Haven</a></li>
                 <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
                 <li><a href="gallery.html" title="Gallery">Gallery</a></li>
             </ul>
@@ -48,14 +47,23 @@
 
        <!--insert content here-->
        <main>
-        <section class="towns">
-        <!--this section populated with the JSON town data gettown.js-->
+        <section class="attributes">
+          <h4>Site Attributes</h4>
+          <h5>Index (Home) page images:</h5>
+          <p>Fish Haven image from <a href="https://www.agefriendly.com/cities/Fish%20Haven+Bear%20Lake+ID+USA">agefriendly.com</a></p>
+          <p>Preston image from <a href="http://www.prestonidaho.net">prestonidaho.net</a></p>
+          <p>Soda Springs image from <a href="http://www.epodunk.com/cgi-bin/genInfo.php?locIndex=7073">wpodunk.com</a></p>
+          <h5>Gallery Images</h5>
+          <p>All images on the gallery site are Adobe Stock with usage rights purchased by Trevor Pope</p>
+          <h5>All other images</h5>
+          <p>All other images on this site are the original works of Trevor Pope</p>
+          <h5>API's used</h5>
+          <p>All weather information provided by <a href="http://www.openweathermap.org">openweathermap.org</a></p>
+          <p>Footer maps are referencing <a href="https://developer.mapquest.com">mapquest.com</a></p>
+
         </section>
 
-        <section class="events">
-          <h2>Town Events</h2>
-          <!--this section populated with the JSON town event data getevents.js-->        
-        </section>
+
 
         
        </main>
@@ -79,13 +87,11 @@
         
         <div id="site_info">
           <script>getDate()</script>  
-          <p>&#169Trevor Pope| 2019 Wassup Weather | <a href="attributes.html">Attributes |</a> C230 BYU-Idaho </p>
+          <p>&#169Trevor Pope| 2019 Wassup Weather | C230 BYU-Idaho </p>
             
         </div>
       </footer>
 
-       <script>getTowns()</script>
-       <script>getEvents()</script>
 
 
   </body>
