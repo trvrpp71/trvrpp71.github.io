@@ -301,13 +301,20 @@ main section.attributes p{text-align: left;}
 	background-color:black;
 	color:white;
 	margin:0;
-	padding:0;
+	padding:1%;
 }
 #site_info p {
 	font-size:75%;
 	margin-top:5px;
 	padding:0;
 
+}
+#site_info a {
+	text-decoration:none;
+	color:white;
+}
+#site_info a:hover{
+	text-decoration: underline;
 }
 
 .map-wrapper {margin-top:2%; padding:0;}
@@ -317,9 +324,6 @@ main section.attributes p{text-align: left;}
 	padding:10px;
 }
 
-
-
-
 .map-wrapper .responsive-container img {
 	width:auto;
 	max-width:100%;
@@ -328,9 +332,7 @@ main section.attributes p{text-align: left;}
 }
 
 
-div#site_info {padding:2%;}
 
-div#citations {margin:4%;}
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
