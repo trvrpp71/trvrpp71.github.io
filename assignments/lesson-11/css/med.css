@@ -79,5 +79,7 @@
     }
 
     /*----------- FOOTER --------------*/
-        
+    
+    section#contact_info h5  {font-size:1.25em;}
+    section#contact_info p {font-size:1em;}
 } /* end of media query */
