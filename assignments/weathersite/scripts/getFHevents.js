@@ -1,5 +1,5 @@
-function getSSevents() {
-    var section = document.querySelector('.soda_events');
+function getFHevents() {
+    var section = document.querySelector('.fish_events');
     var requestURL ='https://byui-cit230.github.io/weather/data/towndata.json'
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
@@ -9,15 +9,15 @@ function getSSevents() {
     request.onload = function() {
         var towns = request.response;
         console.log(towns);
-        getSoda(towns);
+        getFish(towns);
     }
 
-    function getSoda(jsonObj) {
+    function getFish(jsonObj) {
         var towns = jsonObj['towns']; 
         var myDiv = document.createElement('div');
         var myList = document.createElement('ul');
         myDiv.setAttribute("class","box");
-        var events = towns[5].events;
+        var events = towns[1].events;
         for (var j=0; j<events.length; j++){
             var listItem = document.createElement('li');
             listItem.textContent=events[j];

@@ -267,7 +267,7 @@ section.towns {
 .box ul {list-style: none;}
 .box ul li {margin:2%;color:white;}
 
-.events div.box, .preston_events div.box {
+.events div.box, .preston_events div.box, .soda_events div.box, .fish_events div.box{
 	background:#4d5922;
 	border:1.5px solid black;
 	border-radius: 10px;

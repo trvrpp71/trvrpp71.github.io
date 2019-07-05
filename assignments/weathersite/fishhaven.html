@@ -12,8 +12,8 @@
         <script src="scripts/menu.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/weather.js"></script>
-        <script src="scripts/forecast.js"></script>
-        <script src="scripts/getPRevents.js"></script>
+        <script src="scripts/forecast_fh.js"></script>
+        <script src="scripts/getFHevents.js"></script>
         <!-- load css stylesheet -->
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/small.css"/>
@@ -48,7 +48,7 @@
        <!--insert content here-->
        <main>
           <section id="section1" class="site_info">
-            <h2>Preston Idaho</h2>
+            <h2>Fish Haven Idaho</h2>
               <figure class="weather">
                   <img src="images/valley.jpg" alt="Glacier National Park" sizes="80vw"
                   srcset="images/valley_mob.jpg 500w, images/valley_med.jpg 800w">
@@ -71,8 +71,8 @@
 
            <article class="clearfix">
               <div class = "left">
-                <h3>Cycling to Work? Check out the benefits...</h3>
-                <h4>by Joe Blough</h4>
+                <h3>Pirates on the Lake?</h3>
+                <h4>by R.U. Seerius</h4>
                 
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis dui quam. 
@@ -86,18 +86,18 @@
                     turpis egestas. Integer euismod iaculis eros, non mollis quam accumsan in.
                 </p>
                 <figure class="photo">
-                    <img src="../lesson-7/images/bike_flowers_small.jpg" alt="bike & flowers">
-                    <figcaption>Bike with Flowers</figcaption>
+                    <img src="../weathersite/images/boat.jpg" alt="pirate ship">
+                    <figcaption>Pirate Ship on Lake?</figcaption>
                   </figure>  
               </div>
 
               
            </article>
             
-           <article class="preston_events">
-            <h4>Preston Town Events</h4>
+           <article class="fish_events">
+            <h4>Fish Haven Town Events</h4>
             <p>Come join the town for the upcoming events!</p>
-            <script>getPRevents()</script>
+            <script>getFHevents()</script>
 
            </article>
        </main>
@@ -111,13 +111,10 @@
               phone: 555-555-5555 <br>
               email: <a href="mailto:someone@wassupweather.com">someone@wassupweather.com</a>
           </p>
-          <div id = "citations">
-              <p>Weather API data for summary and forecast comes from:</p>
-              <p><a href="http://openweathermap.org">Openweathermap.org</a></p>
-            </div>
+          
           <div class = "map-wrapper">
               <div class = "responsive-container">
-                  <img src="https://www.mapquestapi.com/staticmap/v5/map?key=c2SAQcIxHxnB0UUjxYKfYy9b18smGm6N&center=Preston,ID&zoom=11&scalebar=true" alt="Preston, Idaho">
+                  <img src="https://www.mapquestapi.com/staticmap/v5/map?key=c2SAQcIxHxnB0UUjxYKfYy9b18smGm6N&center=Fish+Haven,ID&zoom=11&scalebar=true" alt="Fish Haven, Idaho">
               </div>
             </div>
  
@@ -129,7 +126,7 @@
           
       </div>
        </footer>
-       <script>forecast()</script>
+       <script>fhforecast()</script>
   </body>
   
 </html>
