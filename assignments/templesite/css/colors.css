@@ -1,0 +1,15 @@
+/* Color Theme Swatches in Hex */
+.ocean-and-beach-1-hex { color: #4E84A6; }
+.ocean-and-beach-2-hex { color: #94CEF2; }
+.ocean-and-beach-3-hex { color: #C2E5F2; }
+.ocean-and-beach-4-hex { color: #7ABFB3; }
+.ocean-and-beach-5-hex { color: #C9BDB7; }
+
+
+/* Color Theme Swatches in Hex */
+$ocean-and-beach-1-hex: #4E84A6;
+$ocean-and-beach-2-hex: #94CEF2;
+$ocean-and-beach-3-hex: #C2E5F2;
+$ocean-and-beach-4-hex: #7ABFB3;
+$ocean-and-beach-5-hex: #C9BDB7;
+
