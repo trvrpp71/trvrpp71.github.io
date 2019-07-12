@@ -5,7 +5,10 @@
 
  
 /*----------- BODY --------------*/
-
+header, nav, main, footer {
+    max-width: 80rem;
+    margin:auto;
+}
 
 
 /*----------- HEADER --------------*/
@@ -14,7 +17,7 @@
 
 /*----------- NAVIGATION --------------*/
 
-
+    nav ul li a {padding: .6rem 1rem;}
 
 
 

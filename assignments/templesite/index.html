@@ -10,22 +10,36 @@
       <!--LOAD STYLE SHEETS-->
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/small.css">
-      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/med.css">
       <link rel="stylesheet" href="css/large.css">
       <!--LOAD GENERAL SCRIPTS-->
-
+      <script src="scripts/togglemenu.js"></script>
+      
     </head>
 
     <body>
       <header>
-        <img src="images/logo_blk.png" alt="Temple Logo">
-        <div>
+        <div class="logo">
+          <img src="images/logo_blk.png" alt="Temple Logo">
           <h1>Temple Inns & Suites</h1>
         </div>
       </header>
       
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button> 
+        <ul id="nav" class="hide">       
+          <li class="active"><a href="#" title="Home">Home</a></li>
+          <li><a href="#" title="Temples">Temples</a></li>
+          <li><a href="#" title="Reserve">Reserve</a></li>
+          <li><a href="#" title="Services">Services</a></li>
+          <li><a href="#" title="Contact">Contact</a></li>
+          <li><a href="#" title="About">About</a></li>
+        </ul>
+      </nav>
       <main>
-     
+        <div class="middle">
+        
+        </div>
       </main>
     </body>    
     
