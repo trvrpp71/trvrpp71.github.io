@@ -35,6 +35,10 @@ function showSlides(n) {
     }
 
     function showTemple(jsonObj) {
+        /*first clear out any previous data*/
+        document.getElementsByClassName('templeInfo').innerHTML="";
+        
+
         var towns = jsonObj['temples'];
         
                 /*----setup elements---*/
