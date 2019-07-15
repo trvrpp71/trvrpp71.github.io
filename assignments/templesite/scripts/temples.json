@@ -2,7 +2,7 @@
     "temples" : [
         {
             "name": "Cardston",
-            "address" : "348 3rd St W<br>Cardston, AB T0K 0K0<br>Canada",
+            "address" : "348 3rd St W\nCardston, AB T0K 0K0\nCanada",
             "phone" : "403-653-3552",
             "services" : [
                 "Clothing rental available",

@@ -1,6 +1,6 @@
 function currentSlide(n) {
 
-    getInfo(slideIndex = n);
+    getInfo(slideIndex = n-1);
     }
 
 
@@ -48,7 +48,7 @@ function getInfo(n) {
                 
                 /*---populate elements with town data----*/
                 myH31.textContent = "Address";
-                myPara1.textContent = towns[n].address;
+                myPara1.textContent = towns[n-1].address;
                 myH32.textContent = "Telephone";
                 myH33.textContent = "Email";
                 
