@@ -43,14 +43,18 @@ function getInfo(n) {
                 myH31.textContent = "Address";
                 myPara1.textContent = towns[n-1].address;
                 myH32.textContent = "Telephone";
+                myPara2.textContent = towns[n-1].phone;
                 myH33.textContent = "Email";
+                myPara3.textContent = "Please log into your LDS account to email the temple."
                 
                 
                 /*---create the div with the elements and data---*/
                 myDiv2.appendChild(myH31);
                 myDiv2.appendChild(myPara1);
                 myDiv2.appendChild(myH32);
+                myDiv2.appendChild(myPara2);
                 myDiv2.appendChild(myH33);
+                myDiv2.appendChild(myPara3);
                 myDiv1.appendChild(myDiv2);
                 section.appendChild(myDiv1);
             }
