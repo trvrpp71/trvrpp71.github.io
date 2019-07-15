@@ -1,7 +1,7 @@
 function currentSlide(n) {
 
     showSlides(slideIndex = n);
-    getInfo(slideIndex=n);
+    getInfo(n);
     }
 
 function showSlides(n) {
