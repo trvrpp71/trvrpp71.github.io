@@ -1,3 +1,10 @@
+function currentSlide(n) {
+
+    getInfo(slideIndex = n);
+    }
+
+
+
 function getInfo(n) {
 
     
