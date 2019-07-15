@@ -36,7 +36,7 @@ function showSlides(n) {
 
     function showTemple(jsonObj) {
         /*first clear out any previous data*/
-        document.getElementsByClassName('templeInfo').innerHTML="";
+        document.getElementById("info").innerHTML="";
         
 
         var towns = jsonObj['temples'];
@@ -61,8 +61,9 @@ function showSlides(n) {
                 myH31.setAttribute("class", "th3");
                 myH32.setAttribute("class","th3");
                 myH33.setAttribute("class","th3");
-                myDiv1.setAttribute("class","container");
-                myDiv2.setAttribute("class","box");
+                myDiv1.setAttribute("class","infoContainer")
+                myDiv1.setAttribute("id","info");
+                myDiv2.setAttribute("class","infoBox");
                 
                 /*---populate elements with town data----*/
                 myH31.textContent = "Address";
