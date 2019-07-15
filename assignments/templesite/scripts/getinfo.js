@@ -8,7 +8,7 @@ function currentSlide(n) {
 function getInfo(n) {
 
     
-    var requestURL ='https://github.com/trvrpp71/trvrpp71.github.io/assignments/templesite/scripts/temples.json'
+    var requestURL ='https://github.com/trvrpp71/trvrpp71.github.io/blob/master/assignments/templesite/scripts/temples.json'
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
