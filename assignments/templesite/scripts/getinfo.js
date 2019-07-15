@@ -1,4 +1,4 @@
-function getInfo() {
+function getInfo(n) {
 
     
     var requestURL ='https://github.com/trvrpp71/trvrpp71.github.io/assignments/templesite/scripts/temples.json'
