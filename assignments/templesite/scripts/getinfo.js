@@ -48,9 +48,9 @@ function getInfo(n) {
                 
                 /*---create the div with the elements and data---*/
                 myDiv2.appendChild(myH31);
+                myDiv2.appendChild(myPara1);
                 myDiv2.appendChild(myH32);
                 myDiv2.appendChild(myH33);
-                myDiv2.appendChild(myPara1);
                 myDiv1.appendChild(myDiv2);
                 section.appendChild(myDiv1);
             }
