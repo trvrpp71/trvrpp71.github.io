@@ -27,7 +27,7 @@
         padding: .8rem 1rem;
     }
     /*----------- MAIN --------------*/
-   
+   article.banner {max-width:420px;}
 
     /*----------- FOOTER --------------*/
     
