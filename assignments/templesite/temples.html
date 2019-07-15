@@ -14,6 +14,8 @@
       <link rel="stylesheet" href="css/large.css">
       <!--LOAD GENERAL SCRIPTS-->
       <script src="scripts/togglemenu.js"></script>
+      <script src="scripts/slides.js"></script>
+      <script src="scripts/getinfo.js"></script>
       
     </head>
 
@@ -38,14 +40,82 @@
 
     
       <main>
-        <ul>
-          <li><a href="temples1.html">Houston</a></li>
-          <li><a href="temples2.html">Cardston</a></li>
-          <li><a href="temples3.html">Edmonton</a></li>
-          <li><a href="temples4.html">Logan</a></li>
-        </ul>
         
+        <!--the following code comes from w3schools-->
+        <!--Container for image gallery-->
+        <div class="container">
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="images/t1card_lg.jpg" alt="Cardston, Alberta" sizes=80vw
+            srcset="images/t1card_sm.jpg 500w, images/t1card_md.jpg 800w">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="images/t2edm_lg.jpg" alt="Edmonton, Alberta" sizes=80vw
+            srcset="images/t2edm_sm.jpg 500w, images/t2edm_md.jpg 800w"> 
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="images/t3log_lg.jpg" alt="Logan, Utah" sizes=80vs
+            srcset="images/t3log_sm.jpg 500w, images/t3log_md.jpg 800w"> 
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/t4hou_lg.jpg" alt="Houston,TX" sizes=80vs
+            srcset="images/t4hou_sm.jpg 500vw, images/t4hou_md.jpg 800w"> 
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail images-->
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="images/t1card_sm.jpg" onclick="currentSlide(1)" alt="Cardston, Alberta">
+            </div>
+            <div class="column"> 
+              <img class="demo cursor" src="images/t2edm_sm.jpg" onclick="currentSlide(2)" alt="Edmonton, Alberta">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/t3log_sm.jpg" onclick="currentSlide(3)" alt="Logan Utah">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/t4hou_sm.jpg" onclick="currentSlide(4)" alt="Houston, TX">
+            </div>
+        </div>
+        
+        <section class="templeInfo">
+          <div class="templeInfo">
+            <span class="subheadAddress">Address</span>
+            <span class="subheadPhone">Telephone</span>
+            <span class="subheadEmail">Email</span>
+            <p>Login into to your LDS account to email the temple</p>
+            <span class="subheadServices">Services</span>
+          </div>
+        </section>
+
       </main>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+      </script>
+      
+      <script>getInfo(n)</script>
+   
     </body>    
     
     <footer>

@@ -6,14 +6,15 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/*-----------set background image---------------*/
-html { 
+/*-----------set background image---------------
+html.homePG { 
 	background: url(../images/background.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
   }
+html.templesPG {background-color:#7ABFB3;}*/
 
 /*-------------BODY--------------*/
 body {font-family: 'Nunito', sans-serif;}
@@ -98,6 +99,76 @@ article.banner {
 }
 .temple figure figcaption {text-align:center;margin:2%;color:#fff;}
 
+/*-----temple gallery-------*/
+.container .mySlides img {width:100%;vertical-align: middle;}
+.container {position: relative;}
+.mySlides {display:none;} /*hide them by default*/
+.cursor {cursor:pointer;}
+.prev, .next {
+	cursor: pointer;
+  	position: absolute;
+  	top: 40%;
+  	width: auto;
+  	padding: 16px;
+  	margin-top: -50px;
+  	color: white;
+  	font-weight: bold;
+  	font-size: 20px;
+  	border-radius: 0 3px 3px 0;
+  	user-select: none;
+  	-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+
+  /* Container for image text */
+.caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+  }
+  .row .column img {width:100%;}
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* four columns side by side */
+  .column {
+	float: left;
+	width: 25%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,.demo:hover {
+	opacity: 1;
+  }
+  
 /*-----------FOOTER--------------*/
 
 footer {
