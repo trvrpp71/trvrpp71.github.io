@@ -17,7 +17,7 @@ function getInfo(n) {
     request.onload = function() {
         var temple = request.response;
         console.log(temple);
-    /*   showTemple(temple);*/
+    showTemple(temple);
     }
 
     function showTemple(jsonObj) {
