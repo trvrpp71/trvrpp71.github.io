@@ -56,6 +56,9 @@ function showSlides(n) {
         /*services*/
         var srH3 = document.createElement('h3');
         var srList = document.createElement('ul');
+        /*schedules*/
+        var scH3 = document.createElement('h3');
+        var scList = document.createAttribute('ul';)
         /*closures*/
         var clH3 = document.createElement('h3');
         var clList = document.createElement('ul');
@@ -79,7 +82,6 @@ function showSlides(n) {
         emH3.textContent = "Email";
         emP.textContent = "Please log into your LDS account to email the temple."
         srH3.textContent = "Services";
-        
         /*---get the services info---*/
         var services = towns[n-1].services;
         for (var j=0; j<services.length; j++) {
@@ -87,6 +89,13 @@ function showSlides(n) {
             listItem.textContent = services[j];
             srList.appendChild(listItem);
         }
+        scH3.textContent = "Ordinance Schedule"
+        /*---get the schedules----*/
+        var sched = towns[n-1].schedules;
+        for (var j=0; j<sched.length; j++){
+            var listItem = document.createElement('li');
+            listItem.textContent = sched[j];
+        }   
         clH3.textContent = "Closures";
         /*---closure info---*/
         var closures = towns[n-1].closures;
@@ -105,6 +114,7 @@ function showSlides(n) {
         article.appendChild(emP);
         article.appendChild(srH3);
         article.appendChild(srList);
+        article.appendChild(scList);
         article.appendChild(clH3);
         article.appendChild(clList);
         infoSection.appendChild(article);
