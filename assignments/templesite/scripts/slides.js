@@ -75,7 +75,7 @@ function showSlides(n) {
             var listItem = document.createElement('li');
             listItem.textContent = address[j];
             adList.appendChild(listItem);
-        }
+        };
         /*---phone & email----*/
         phH3.textContent = "Telephone";
         phP.textContent = towns[n-1].phone;
@@ -88,14 +88,15 @@ function showSlides(n) {
             var listItem = document.createElement('li');
             listItem.textContent = services[j];
             srList.appendChild(listItem);
-        }
+        };
         scH3.textContent = "Ordinance Schedule";
         /*---get the schedules----*/
         var sched = towns[n-1].schedules;
         for (var j=0; j<sched.length; j++){
             var listItem = document.createElement('li');
-            scList.textContent = sched[j];
-        }   
+            listItem.textContent = sched[j];
+            scList.appendChild(listItem);
+        };   
         clH3.textContent = "Closures";
         /*---closure info---*/
         var closures = towns[n-1].closures;
@@ -103,7 +104,7 @@ function showSlides(n) {
             var listItem = document.createElement('li');
             listItem.textContent = closures[j];
             clList.appendChild(listItem);
-        }
+        };
         
         /*---create the div with the elements and data---*/
         article.appendChild(adH3);
@@ -114,6 +115,7 @@ function showSlides(n) {
         article.appendChild(emP);
         article.appendChild(srH3);
         article.appendChild(srList);
+        article.appendChild(scH3);
         article.appendChild(scList);
         article.appendChild(clH3);
         article.appendChild(clList);
