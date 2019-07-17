@@ -45,36 +45,41 @@ function showSlides(n) {
         var article = document.createElement('article');
 
         /*address*/
-        var adDiv = document.createElement('div');
         var adH3 = document.createElement('h3');
-        var adP = document.createElement('p');
+        var adList = document.createElement('ul');
         /*phone*/
-        var phDiv = document.createElement('div');
         var phH3 = document.createElement('h3');
         var phP = document.createElement('p');
         /*email*/
-        var emDiv = document.createElement('div');
         var emH3 = document.createElement('h3');
         var emP = document.createElement('p');
         /*services*/
-        var srDiv = document.createElement('div');
         var srH3 = document.createElement('h3');
         var srList = document.createElement('ul');
+        /*closures*/
         var clH3 = document.createElement('h3');
         var clList = document.createElement('ul');
 
 
-        var myImg = document.createElement('img');
+        /*var myImg = document.createElement('img');*/
     
         
         /*---populate elements with town data----*/
         adH3.textContent = "Address";
-        adP.textContent = towns[n-1].address;
+        /*----get the address info----*/
+        var address = towns[n-1].address;
+        for (var j=0; j<address.length; j++) {
+            var listItem = document.createElement('li');
+            listItem.textContent = address[j];
+            adList.appendChild(listItem);
+        }
+        /*---phone & email----*/
         phH3.textContent = "Telephone";
         phP.textContent = towns[n-1].phone;
         emH3.textContent = "Email";
         emP.textContent = "Please log into your LDS account to email the temple."
         srH3.textContent = "Services";
+        
         /*---get the services info---*/
         var services = towns[n-1].services;
         for (var j=0; j<services.length; j++) {
@@ -93,7 +98,7 @@ function showSlides(n) {
         
         /*---create the div with the elements and data---*/
         article.appendChild(adH3);
-        article.appendChild(adP);
+        article.appendChild(adList);
         article.appendChild(phH3);
         article.appendChild(phP);
         article.appendChild(emH3);

@@ -2,7 +2,11 @@
     "temples" : [
         {
             "name": "Cardston",
-            "address" :  "348 3rd St W\nCardston, AB T0K 0K0\nCanada",
+            "address" :  [
+                "348 3rd St W",
+                "Cardston, AB T0K 0K0",
+                "Canada"
+            ],
             "phone" : "403-653-3552",
             "services" : [
                 "Clothing rental available",
@@ -29,7 +33,11 @@
         },
         {    
         "name": "Edmonton",
-        "address" : "14335 53rd Ave<br>Edmonton, AB T6h 5G6<br>Canada",
+        "address" : [
+            "14335 53rd Ave",
+            "Edmonton, AB T6h 5G6",
+            "Canada"
+        ],
         "phone" : "780-434-7436",
         "services" : [
             "No Clothing rental available",
@@ -52,7 +60,11 @@
     },
     {
         "name": "Logan",
-        "address" : "175 N 300E<br>Logan, UT 84321<br>USA",
+        "address" : [
+            "175 N 300E",
+            "Logan, UT 84321",
+            "USA"
+        ],
         "phone" : "435-752-3611",
         "services" : [
             "Clothing rental available",
@@ -83,7 +95,11 @@
     },
     {
         "name": "Houston",
-        "address" : "15725 Champion Forest Dr<br>Spring, TX 77379,<br> USA",
+        "address" : [
+            "15725 Champion Forest Dr",
+            "Spring, TX 77379",
+            "USA"
+        ],
         "phone" : "281-376-6804",
         "services" : [
             "Clothing rental available",
