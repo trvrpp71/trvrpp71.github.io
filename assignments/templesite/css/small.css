@@ -170,7 +170,7 @@ article.banner {
   }
   
 
-  /*----reservation form styles------*/
+  /*----General form styles------*/
 
   form fieldset {
 	margin:2rem 2%;
@@ -186,6 +186,13 @@ article.banner {
 	text-shadow: 1px 1px 1px #111;
 }
 
+	form label.contact, form label.sbs {
+		display:block;
+		padding-top: 1rem;
+		color:black;
+		font-size: .9rem;
+	}
+/*----reservations page styles-----*/
 	#state, #country{
 		-webkit-appearance: none;
 		display:block;
@@ -198,7 +205,7 @@ article.banner {
 		min-width:200px;
 	}
 
-	/*----services----*/
+	/*----services page styles----*/
 
 	.amenities h3 {padding:2%;}
 	.serBanner {opacity: .5;}
@@ -230,6 +237,29 @@ article.banner {
 	}
 	
 	.serviceImg img {box-shadow: 5px 5px 20px black;}
+
+/*-----------contact page styles-----------*/
+
+
+
+.contactPg {
+	padding:2%;
+}
+
+.contactFrm {
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+.contactFrm fieldset legend {
+	padding: 2%;
+}
+
+.contact {
+	margin-top: 2%;
+	padding:10px 2%;}
+
 /*-----------FOOTER--------------*/
 
 footer {

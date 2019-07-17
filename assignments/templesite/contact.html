@@ -30,21 +30,36 @@
         <ul id="nav" class="hide">       
           <li><a href="index.html" title="Home">Home</a></li>
           <li><a href="temples.html" title="Temples">Temples</a></li>
-          <li><a href="reserver.html" title="Reserve">Reserve</a></li>
+          <li><a href="reserve.html" title="Reserve">Reserve</a></li>
           <li><a href="services.html" title="Services">Services</a></li>
           <li class="active"><a href="#" title="Contact">Contact</a></li>
         </ul>
       </nav>
 
     
-      <main>
+      <main class="contactPg">
         <h3>About Temple Inns & Suites</h3>
 
         <p>The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.</p> <p>The owner-operated company caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by the company </p>
         <p>For additional information please feel free to contact us via the contact form below.</p>
 
-        <section class="contact">
-          
+        <section class="contactFrm">
+          <form>
+          <fieldset>
+            <legend>Request Contact</legend>
+            <label class="contact">Full name <input type="text" name="name" pattern="[A-Za]" required></label>
+            <label class="contact">Email <input type ="email" name="email" required placeholder="name@email.com"></label>
+            <label class="contact">Phone <input type ="tel" name="phone" placeholder="555-555-5555"></label>
+            <legend>Preferred Method of Contact?</legend>
+            <label class="sbs"><input type="checkbox" name="check" value="email">Email</label>
+            <label class="sbs"><input type="checkbox" name="check" value="phone">Phone</label>
+            <label class="sbs"><input type="checkbox" name="check" value="">Doesnt' Matter</label>
+            <textarea name="notes" placeholder="Add any specific details here about the purpose of the contact."></textarea>
+          </fieldset>
+          <div id="submitBtn">
+            <input type="submit" name="submit" value="Request Contact">
+          </div>
+          </form>
         </section>
 
         

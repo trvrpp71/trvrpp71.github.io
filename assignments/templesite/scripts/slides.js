@@ -31,59 +31,73 @@ function showSlides(n) {
     request.onload = function() {
         var temple = request.response;
         console.log(temple);
-    showTemple(temple);
+        showTemple(temple);
+        showServices(temple);
     }
 
     function showTemple(jsonObj) {
         /*first clear out any previous data*/
         document.getElementById("toClear").innerHTML="";
-        
-
         var towns = jsonObj['temples'];
         
-                /*----setup elements---*/
-                var section = document.querySelector('.templeInfo');
-                var myDiv1 = document.createElement('div'); /*address*/
-                var myDiv2 = document.createElement('div'); /*phone*/
-                var myDiv3 = document.createElement('div'); /*email*/
-                var myH31 = document.createElement('h3');
-                var myH32 = document.createElement('h3');
-                var myH33 = document.createElement('h3');
-                var myPara1 = document.createElement('p');
-                var myPara2 = document.createElement('p');
-                var myPara3 = document.createElement('p');
-                var myPara4 = document.createElement('p');
-                var myImg = document.createElement('img');
-                myPara1.setAttribute("class","p1");
-                myPara2.setAttribute("class","p2");
-                myPara3.setAttribute("class","p3");
-                myPara4.setAttribute("class","p4");
-                myH31.setAttribute("class", "th3");
-                myH32.setAttribute("class","th3");
-                myH33.setAttribute("class","th3");
-                myDiv1.setAttribute("class","infoContainer")
-                myDiv1.setAttribute("id","info");
-                myDiv2.setAttribute("class","infoBox");
-                
-                /*---populate elements with town data----*/
-                myH31.textContent = "Address";
-                myPara1.textContent = towns[n-1].address;
-                myH32.textContent = "Telephone";
-                myPara2.textContent = towns[n-1].phone;
-                myH33.textContent = "Email";
-                myPara3.textContent = "Please log into your LDS account to email the temple."
-                
-                
-                /*---create the div with the elements and data---*/
-                myDiv2.appendChild(myH31);
-                myDiv2.appendChild(myPara1);
-                myDiv2.appendChild(myH32);
-                myDiv2.appendChild(myPara2);
-                myDiv2.appendChild(myH33);
-                myDiv2.appendChild(myPara3);
-                myDiv1.appendChild(myDiv2);
-                section.appendChild(myDiv1);
-            }
+        /*----setup elements---*/
+        var section = document.querySelector('.templeInfo');
+        var myDiv1 = document.createElement('div'); /*address*/
+        var myDiv2 = document.createElement('div'); /*phone*/
+        var myDiv3 = document.createElement('div'); /*email*/
+        var myDiv4 = document.createElement('div'); /*services*/
+        var myDiv5 = document.createElement('div'); /*closures*/
+        var myH31 = document.createElement('h3');
+        var myH32 = document.createElement('h3');
+        var myH33 = document.createElement('h3');
+        var myPara1 = document.createElement('p');
+        var myPara2 = document.createElement('p');
+        var myPara3 = document.createElement('p');
+        var myPara4 = document.createElement('p');
+        var myImg = document.createElement('img');
+        myPara1.setAttribute("class","p1");
+        myPara2.setAttribute("class","p2");
+        myPara3.setAttribute("class","p3");
+        myPara4.setAttribute("class","p4");
+        myH31.setAttribute("class", "th3");
+        myH32.setAttribute("class","th3");
+        myH33.setAttribute("class","th3");
+        myDiv1.setAttribute("class","infoContainer")
+        myDiv1.setAttribute("id","info");
+        myDiv2.setAttribute("class","infoBox");
+        
+        /*---populate elements with town data----*/
+        myH31.textContent = "Address";
+        myPara1.textContent = towns[n-1].address;
+        myH32.textContent = "Telephone";
+        myPara2.textContent = towns[n-1].phone;
+        myH33.textContent = "Email";
+        myPara3.textContent = "Please log into your LDS account to email the temple."
+        
+        
+        /*---create the div with the elements and data---*/
+        myDiv2.appendChild(myH31);
+        myDiv2.appendChild(myPara1);
+        myDiv2.appendChild(myH32);
+        myDiv2.appendChild(myPara2);
+        myDiv2.appendChild(myH33);
+        myDiv2.appendChild(myPara3);
+        myDiv1.appendChild(myDiv2);
+        section.appendChild(myDiv1);
+    }
 
+    function showServices(jsonObj)
+        document.getElementById("toClear").innerHTML="";
+        var services = jsonObj['towns'];
 
+        for (var i=0; i<services.length; i++) {
+            var serArticle = document.createElement('article');
+            var serH2 = document.createElement('h2');
+            var ser1 = document.createElement('p');
+            var ser2 = document.createElement('p');
+            var ser3 = document.createElement('p');
+            var ser4 = document.createElement('p');
+
+            ser1.textContent = services[i].
+        }
 }
