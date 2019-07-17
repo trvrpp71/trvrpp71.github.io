@@ -58,7 +58,7 @@ function showSlides(n) {
         var srList = document.createElement('ul');
         /*schedules*/
         var scH3 = document.createElement('h3');
-        var scList = document.createAttribute('ul';)
+        var scList = document.createAttribute('ul');
         /*closures*/
         var clH3 = document.createElement('h3');
         var clList = document.createElement('ul');
