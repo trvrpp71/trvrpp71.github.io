@@ -94,7 +94,7 @@ function showSlides(n) {
         var sched = towns[n-1].schedules;
         for (var j=0; j<sched.length; j++){
             var listItem = document.createElement('li');
-            listItem.textContent = sched[j];
+            scList.textContent = sched[j];
         }   
         clH3.textContent = "Closures";
         /*---closure info---*/
