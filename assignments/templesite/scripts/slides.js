@@ -89,7 +89,7 @@ function showSlides(n) {
             listItem.textContent = services[j];
             srList.appendChild(listItem);
         }
-        scH3.textContent = "Ordinance Schedule"
+        scH3.textContent = "Ordinance Schedule";
         /*---get the schedules----*/
         var sched = towns[n-1].schedules;
         for (var j=0; j<sched.length; j++){
