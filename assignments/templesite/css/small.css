@@ -233,11 +233,19 @@ article.banner {
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
-		
 	}
 	
-	.serviceImg img {box-shadow: 5px 5px 20px black;}
+	.serviceImg img {
+		box-shadow: 5px 5px 20px black;
+		margin-top:20px;
+	}
+	.services {margin:2%;}
 
+	.services ul li {
+		margin:10px 2% 5px 0;
+		padding-right:2%;
+		text-align:justify;
+	}
 /*-----------contact page styles-----------*/
 
 

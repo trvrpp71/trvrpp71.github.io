@@ -32,7 +32,6 @@ function showSlides(n) {
         var temple = request.response;
         console.log(temple);
         showTemple(temple);
-        showServices(temple);
     }
 
     function showTemple(jsonObj) {
@@ -41,63 +40,71 @@ function showSlides(n) {
         var towns = jsonObj['temples'];
         
         /*----setup elements---*/
-        var section = document.querySelector('.templeInfo');
-        var myDiv1 = document.createElement('div'); /*address*/
-        var myDiv2 = document.createElement('div'); /*phone*/
-        var myDiv3 = document.createElement('div'); /*email*/
-        var myDiv4 = document.createElement('div'); /*services*/
-        var myDiv5 = document.createElement('div'); /*closures*/
-        var myH31 = document.createElement('h3');
-        var myH32 = document.createElement('h3');
-        var myH33 = document.createElement('h3');
-        var myPara1 = document.createElement('p');
-        var myPara2 = document.createElement('p');
-        var myPara3 = document.createElement('p');
-        var myPara4 = document.createElement('p');
+        var infoSection = document.querySelector('.templeInfo');
+        /*---create subcontainer---*/
+        var article = document.createElement('article');
+
+        /*address*/
+        var adDiv = document.createElement('div');
+        var adH3 = document.createElement('h3');
+        var adP = document.createElement('p');
+        /*phone*/
+        var phDiv = document.createElement('div');
+        var phH3 = document.createElement('h3');
+        var phP = document.createElement('p');
+        /*email*/
+        var emDiv = document.createElement('div');
+        var emH3 = document.createElement('h3');
+        var emP = document.createElement('p');
+        /*services*/
+        var srDiv = document.createElement('div');
+        var srH3 = document.createElement('h3');
+        var srList = document.createElement('ul');
+        var clH3 = document.createElement('h3');
+        var clList = document.createElement('ul');
+
+
         var myImg = document.createElement('img');
-        myPara1.setAttribute("class","p1");
-        myPara2.setAttribute("class","p2");
-        myPara3.setAttribute("class","p3");
-        myPara4.setAttribute("class","p4");
-        myH31.setAttribute("class", "th3");
-        myH32.setAttribute("class","th3");
-        myH33.setAttribute("class","th3");
-        myDiv1.setAttribute("class","infoContainer")
-        myDiv1.setAttribute("id","info");
-        myDiv2.setAttribute("class","infoBox");
+    
         
         /*---populate elements with town data----*/
-        myH31.textContent = "Address";
-        myPara1.textContent = towns[n-1].address;
-        myH32.textContent = "Telephone";
-        myPara2.textContent = towns[n-1].phone;
-        myH33.textContent = "Email";
-        myPara3.textContent = "Please log into your LDS account to email the temple."
-        
+        adH3.textContent = "Address";
+        adP.textContent = towns[n-1].address;
+        phH3.textContent = "Telephone";
+        phP.textContent = towns[n-1].phone;
+        emH3.textContent = "Email";
+        emP.textContent = "Please log into your LDS account to email the temple."
+        srH3.textContent = "Services";
+        /*---get the services info---*/
+        var services = towns[n-1].services;
+        for (var j=0; j<services.length; j++) {
+            var listItem = document.createElement('li');
+            listItem.textContent = services[j];
+            srList.appendChild(listItem);
+        }
+        clH3.textContent = "Closures";
+        /*---closure info---*/
+        var closures = towns[n-1].closures;
+        for (var j=0; j<closures.length; j++){
+            var listItem = document.createElement('li');
+            listItem.textContent = closures[j];
+            clList.appendChild(listItem);
+        }
         
         /*---create the div with the elements and data---*/
-        myDiv2.appendChild(myH31);
-        myDiv2.appendChild(myPara1);
-        myDiv2.appendChild(myH32);
-        myDiv2.appendChild(myPara2);
-        myDiv2.appendChild(myH33);
-        myDiv2.appendChild(myPara3);
-        myDiv1.appendChild(myDiv2);
-        section.appendChild(myDiv1);
+        article.appendChild(adH3);
+        article.appendChild(adP);
+        article.appendChild(phH3);
+        article.appendChild(phP);
+        article.appendChild(emH3);
+        article.appendChild(emP);
+        article.appendChild(srH3);
+        article.appendChild(srList);
+        article.appendChild(clH3);
+        article.appendChild(clList);
+        infoSection.appendChild(article);
     }
 
-    function showServices(jsonObj)
-        document.getElementById("toClear").innerHTML="";
-        var services = jsonObj['towns'];
 
-        for (var i=0; i<services.length; i++) {
-            var serArticle = document.createElement('article');
-            var serH2 = document.createElement('h2');
-            var ser1 = document.createElement('p');
-            var ser2 = document.createElement('p');
-            var ser3 = document.createElement('p');
-            var ser4 = document.createElement('p');
-
-            ser1.textContent = services[i].
-        }
+        
 }
