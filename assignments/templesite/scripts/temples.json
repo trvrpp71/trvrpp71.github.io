@@ -14,6 +14,13 @@
                 "No patron housing",
                 "Distribution center near-by"
             ],
+            "schedules" : [
+                "Endowments: 09:30, 10:30, 12:00, 13:00, 15:30, 16:30, 19:00",
+                "Initiatory: 09:00 - 20:00 Walk-ins and Appointment",
+                "Sealing: Please call",
+                "Baptisms (Walk-ins): 12:00 - 17:00",
+                "Baptisms (by Appointment): 10:00 - 12:00 & 17:00 - 20:00"
+            ],
             "closures" : [
                 "29 July - 12 August 2019",
                 "5 October 2019",
@@ -30,99 +37,121 @@
             ]
         },
         {    
-        "name": "Edmonton",
-        "address" : [
-            "14335 53rd Ave",
-            "Edmonton, AB T6h 5G6",
-            "Canada"
-        ],
-        "phone" : "780-434-7436",
-        "services" : [
-            "No Clothing rental available",
-            "No on-site cafeteria",
-            "No patron housing",
-            "No Distribution center near-by"
-        ],
-        "closures" : [
-            "15 - 29 July 2019",
-            "5 October 2019",
-            "24 - 26 December 2019",
-            "1 January 2020",
-            "20 January -  3 February 2020",
-            "4 April 2020",
-            "1 July 2020",
-            "20 July 2020 - 3 August 2020",
-            "3 October 2020",
-            "24 - 26 December 2020"
-        ]
-    },
-    {
-        "name": "Logan",
-        "address" : [
-            "175 N 300E",
-            "Logan, UT 84321",
-            "USA"
-        ],
-        "phone" : "435-752-3611",
-        "services" : [
-            "Clothing rental available",
-            "On-site cafeteria",
-            "No patron housing",
-            "No distribution center near-by"
-        ],
-        "closures" : [
-            "22 July -  5 August 2019",
-            "5 October 2019",
-            "27 November 2019 (Limited Hours)",
-            "28 November 2019",
-            "24 - 25 December 2019",
-            "31 December 2019 (Limited Hours)",
-            "1 January 2020",
-            "10 - 24 February 2020",
-            "4 April 2020",
-            "4 July 2020",
-            "20 July 2020 - 3 August 2020",
-            "3 October 2020",
-            "25 November 2020 (Limited Hours)",
-            "26 November 2020",
-            "24 - 25 December 2020",
-            "31 December 2020 (Limited Hours)"
-        ]
-    },
-    {
-        "name": "Houston",
-        "address" : [
-            "15725 Champion Forest Dr",
-            "Spring, TX 77379",
-            "USA"
-        ],
-        "phone" : "281-376-6804",
-        "services" : [
-            "Clothing rental available",
-            "No on-site cafeteria",
-            "No patron housing",
-            "Distribution center on-site"
-        ],
-        "closures" : [
-            "6 August 2019 -  2 September 2019",
-            "5 October 2019",
-            "27 November 2019 (Limited Hours)",
-            "28 November 2019",
-            "24 - 25 December 2019",
-            "31 December 2019 (Limited Hours)",
-            "1 January 2020",
-            "3 - 16 March 2020",
-            "4 April 2020",
-            "4 July 2020",
-            "1 - 14 September 2020",
-            "3 October 2020",
-            "25 November 2020 (Limited Hours)",
-            "26 November 2020",
-            "24 - 25 December 2020",
-            "31 December 2020 (Limited Hours)"
-        ]
-    }
+            "name": "Edmonton",
+            "address" : [
+                "14335 53rd Ave",
+                "Edmonton, AB T6h 5G6",
+                "Canada"
+            ],
+            "phone" : "780-434-7436",
+            "services" : [
+                "No Clothing rental available",
+                "No on-site cafeteria",
+                "No patron housing",
+                "No Distribution center near-by"
+            ],
+            "schedules" : [
+                "Endowments: 07:30, 09:00, 10:30, 16:30, 18:00, 19:30",
+                "Initiatory: 07:00 - 12:00 & 16:30 - 20:00 Walk-ins only",
+                "Sealing: 07:00 - 12:00 & 16:30 - 20:00 Walk-ins only",
+                "Baptisms (Walk-ins): 07:00 - 12:00",
+                "Baptisms (by Appointment): 17:30 - 21:00"
+            ],
+            "closures" : [
+                "15 - 29 July 2019",
+                "5 October 2019",
+                "24 - 26 December 2019",
+                "1 January 2020",
+                "20 January -  3 February 2020",
+                "4 April 2020",
+                "1 July 2020",
+                "20 July 2020 - 3 August 2020",
+                "3 October 2020",
+                "24 - 26 December 2020"
+            ]
+        },
+        {
+            "name": "Logan",
+            "address" : [
+                "175 N 300E",
+                "Logan, UT 84321",
+                "USA"
+            ],
+            "phone" : "435-752-3611",
+            "services" : [
+                "Clothing rental available",
+                "On-site cafeteria",
+                "No patron housing",
+                "No distribution center near-by"
+            ],
+            "schedules" : [
+                "Endowments: 07:00 - 21:00 every 1/2 hour",
+                "Initiatory: 06:30 - 20:00 Walk-ins only",
+                "Sealing: 07:00 - 12:00 & 16:30 - 20:00 Walk-ins only",
+                "Baptisms: 05:30 - 07:00 (Walk-ins) 07:00 - 18:00 (Walk-ins & Appointment)",
+                "Baptisms (Family Priority Time): 18:00 - 19:30"
+            ],
+            "closures" : [
+                "22 July -  5 August 2019",
+                "5 October 2019",
+                "27 November 2019 (Limited Hours)",
+                "28 November 2019",
+                "24 - 25 December 2019",
+                "31 December 2019 (Limited Hours)",
+                "1 January 2020",
+                "10 - 24 February 2020",
+                "4 April 2020",
+                "4 July 2020",
+                "20 July 2020 - 3 August 2020",
+                "3 October 2020",
+                "25 November 2020 (Limited Hours)",
+                "26 November 2020",
+                "24 - 25 December 2020",
+                "31 December 2020 (Limited Hours)"
+            ]
+        },
+        {
+            "name": "Houston",
+            "address" : [
+                "15725 Champion Forest Dr",
+                "Spring, TX 77379",
+                "USA"
+            ],
+            "phone" : "281-376-6804",
+            "services" : [
+                "Clothing rental available",
+                "No on-site cafeteria",
+                "No patron housing",
+                "Distribution center on-site"
+            ],
+            "schedules" : [
+                "Endowments: 08:00 - 20:00 every 1 hour",
+                "Initiatory: 08:00 - 21:30 Walk-ins only",
+                "Sealing: 08:00 - 21:30 Walk-ins & Appointment",
+                "Baptisms: 08:00-10:00 & 15:00-18:00 (Walk-ins & Appointment)",
+                "Baptisms (Church Groups): 10:00-15:00 & 18:00-21:00"
+            ],
+            "closures" : [
+                "6 August 2019 -  2 September 2019",
+                "5 October 2019",
+                "27 November 2019 (Limited Hours)",
+                "28 November 2019",
+                "24 - 25 December 2019",
+                "31 December 2019 (Limited Hours)",
+                "1 January 2020",
+                "3 - 16 March 2020",
+                "4 April 2020",
+                "4 July 2020",
+                "1 - 14 September 2020",
+                "3 October 2020",
+                "25 November 2020 (Limited Hours)",
+                "26 November 2020",
+                "24 - 25 December 2020",
+                "31 December 2020 (Limited Hours)"
+            ]
+        }
     
     
-]
+    ]
+
 }
