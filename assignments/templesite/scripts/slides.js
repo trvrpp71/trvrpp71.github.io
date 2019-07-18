@@ -31,12 +31,14 @@ function showSlides(n) {
     request.onload = function() {
         var temple = request.response;
         console.log(temple);
+        console.log(n);
         showTemple(temple);
-    }
+    } //end of request.onload funtion
 
+  
     function showTemple(jsonObj) {
         /*first clear out any previous data*/
-        document.getElementById("toClear").innerHTML="";
+        document.getElementById("Clear1").innerHTML="";
         var towns = jsonObj['temples'];
         
         /*----setup elements---*/
@@ -120,8 +122,57 @@ function showSlides(n) {
         article.appendChild(clH3);
         article.appendChild(clList);
         infoSection.appendChild(article);
-    }
 
+    /*---add the weather summary----*/
+        let weatherObject = new XMLHttpRequest();
+        var weatherURL = "";
+        switch (n) {
+            case 1: //Cardston
+                weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5916821&units=imperial&APPID=e9a8fc67ba9b237ce516dd7ae7f7d335';
+                break;
+            case 2: //Edmonton
+                weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5946768&units=imperial&APPID=e9a8fc67ba9b237ce516dd7ae7f7d335';
+                break;
+            case 3: //Logan
+                weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5777544&units=imperial&APPID=e9a8fc67ba9b237ce516dd7ae7f7d335';
+                break;
+            case 4: //Houston
+                 weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=4699066&units=imperial&APPID=e9a8fc67ba9b237ce516dd7ae7f7d335';
+                break;
+        } //end of switch statement
+        weatherObject.open('GET',weatherURL,true);
+        weatherObject.send();
+        weatherObject.onload=function(){
 
-        
-}
+             /*first clear out any previous data*/
+            document.getElementById("Clear2").innerHTML="";
+            let weatherInfo=JSON.parse(weatherObject.responseText);
+            /*----setup elements---*/
+            var weatherSummary = document.querySelector('.weatherInfo');
+            /*---create subcontainer---*/
+            var article = document.createElement('article');
+            /*address*/
+            var wtH3 = document.createElement('h3');
+            var wtP1 = document.createElement('p'); //temp
+            var wtP2 = document.createElement('p'); //high
+            var wtP3 = document.createElement('p'); //humidity
+            var wtP4 = document.createElement('p'); //description
+
+            wtH3.textContent = "Weather summary for the Area";
+            wtP1.textContent = "Currently:" + Math.round(weatherInfo.main.temp)+ "\u00B0" +"F";
+            wtP2.textContent = "High:" + Math.round(weatherInfo.main.temp_max) + "\u00B0" +"F";
+            wtP3.textContent = "Humidity:" + weatherInfo.main.humidity + "%";
+            wtP4.textContent = "Conditions:" + weatherInfo.weather[0].description;
+
+            /*---create the div with the elements and data---*/
+            article.appendChild(wtH3);
+            article.appendChild(wtP1);
+            article.appendChild(wtP2);
+            article.appendChild(wtP3);
+            article.appendChild(wtP4);
+            weatherSummary.appendChild(article);
+
+        } //end of weatherObject onload
+
+    } //end of showTemple()
+}//end of showSlides function
