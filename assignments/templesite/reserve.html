@@ -38,14 +38,27 @@
 
     
       <main>
-        <form method="get" action="thanks.html">
+        <h3>Reserve Your Room</h3>
+        <form class='reserve' method="get" action="thanks.html">
           <fieldset>
             <legend>Guest Information</legend>
-            <label class="guest">Last Name <input type="text" name="lname" pattern="[A-Za]" required></label>
-            <label class="guest">First Name <input type="text" name="fname" pattern="[A-Za]" required></label>
-            <label class="guest">Email <input type="email" name="email" required placeholder="name@email.com"></label>
-            <label class="guest">Telephone <input type="tel" name="phone" pattern="[0-9,-]{5,}" required placeholder="555-555-5555"></label>
-            <label class="guest">State or Province
+            <div>
+              <input id='lname' type="text" name="lname" pattern="[A-Za]" required>
+              <label for='lname'>Last Name </label>
+            </div>
+            <div>
+              <input id='fname' type="text" name="fname" pattern="[A-Za]" required>
+              <label for='fname'>First Name </label>
+            </div>
+            <div>
+              <input id='email' type="email" name="email" required placeholder="name@email.com">
+              <label for='email'>Email </label>
+            </div>
+            <div>
+                <input id='phone' type="tel" name="phone" pattern="[0-9,-]{5,}" required placeholder="555-555-5555">
+                <label for='phone'>Telephone </label>
+            </div>
+            <div>
               <select id="state" name="state">
                 <option value="" disabled selected>Please select &#9662;</option>
                 <option value="AL">Alabama</option>
@@ -113,8 +126,10 @@
                 <option value="NU">Nunavut</option>
                 <option value="YT">Yukon</option>
               </select>
-            </label>
-            <label class="guest">Country 
+              <label for='state'>State</label>
+          </div>
+
+          <div>
               <select id="country" name="country">
                   <option value="US">United States</option>
                   <option value="CA">Canada</option>
@@ -366,14 +381,24 @@
                   <option value="ZM">Zambia</option>
                   <option value="ZW">Zimbabwe</option>
               </select>
-            </label>
+              <label for='country'>Country </label>
+            </div>
           </fieldset>
+
           <fieldset>
+            <div>
             <legend>Room & Services</legend>
-            <label class="room">Number of Guests<input type="text" name="num" pattern="[0-9]" required></label>
-            <label class="room">How Many Rooms?<input type="text" name="num" pattern="[0-9]" required></label>
-            <label class="room">Type of Room
-                <select id="room" name="room">
+            </div>
+            <div>
+                <input id='numRoom'type="text" name="num" pattern="[0-9]" required>
+                <label for='numRoom'>Number of Guests</label>
+            </div>
+            <div>
+              <input id='numPeople' type="text" name="num" pattern="[0-9]" required>
+              <label for='numRoom'>How Many Rooms?</label>
+            </div>
+            <div>
+               <select id="room" name="room">
                   <option value="" disabled selected>Please select &#9662;</option>
                   <option value="2dbl">2 Double Beds - STD</option>
                   <option value="2dblx">2 Double Beds - Deluxe</option>
@@ -384,17 +409,22 @@
                   <option value="1bdst">1 Bedroom Suite</option>
                   <option value="2bdst">2 Bedroom Suite</option>
                 </select>
-          </fieldset>
-          <fieldset>
-              <legend>Special Requests or Needs</legend>
-              <textarea name="notes" placeholder="Type additional comments here:"></textarea>
-            </fieldset>
-            <div id="submitBtn">
-              <input type="submit" name="submit" value="Reserve Your Room">
+                <label for='room'>Type of Room</label>
             </div>
           </fieldset>
 
-        </form>
+          <fieldset>
+            <div>
+              <legend>Special Requests or Needs</legend>
+              <textarea name="notes" placeholder="Type additional comments here:"></textarea>
+            </div>
+            
+          </fieldset>
+            <div id="submitBtn">
+              <input type="submit" name="submit" value="Reserve Your Room">
+            </div>
+
+       </form>
         
       </main>
     </body>    

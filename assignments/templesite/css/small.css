@@ -178,31 +178,10 @@ article.banner {
 	font-size: 18px; /* Increase font size */
   }
   
-  #myBtn:hover {
+  #topBtn:hover {
 	background-color: #555; /* Add a dark-grey background on hover */
   }
-  /*----General form styles------*/
 
-  form fieldset {
-	margin:2rem 2%;
-	border:1px solid  #4d5922;
-	border-radius:10px;
-	padding:.5rem 2%;
-  }
-
-  form legend {
-	color:#6D96A6;
-	margin: 0 1rem;
-	padding:0 .5rem;
-	text-shadow: 1px 1px 1px #111;
-}
-
-	form label.contact, form label.sbs {
-		display:block;
-		padding-top: 1rem;
-		color:black;
-		font-size: .9rem;
-	}
 /*----reservations page styles-----*/
 
 
@@ -213,21 +192,24 @@ form fieldset {
 	padding:.5rem 2%;
 }
 
-
-main label input {
-	-webkit-appearance: none;
-    display:block;
-    font-size:1rem;
-    border:solid 1px #999;
-    border-radius: 4px;
-	padding: .75rem;
-	margin: .5rem 0;
-    color:#555;
-    width:100%;
-    background-color: rgba(0,0,0,0.1)
+form fieldset div {
+	display:flex;
+	flex-direction: column;
+	align-items:flex-start;
 }
 
-#state, #country{
+form fieldset div label {
+	order: 1;
+	width: 10em;
+	padding-right: 0.5em;
+  }
+  
+form fieldset input, form fieldset textarea, form fieldset select {
+	order: 2;
+	flex: 1 1 auto;
+  }
+
+#lname, #fname, #email, #phone,#state, #country, #numRoom, #numPeople, #room {
 		-webkit-appearance: none;
 		display:block;
 		margin: .5rem 0;
