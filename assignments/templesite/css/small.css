@@ -6,20 +6,11 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/*-----------set background image---------------
-html.homePG { 
-	background: url(../images/background.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-  }
-html.templesPG {background-color:#7ABFB3;}*/
 
 /*-------------BODY--------------*/
 body {font-family: 'Nunito', sans-serif;}
 h1, h2, h3, h4, h5, h6 {font-family:'Lato', sans-serif;}
-
+.supInfo, .contactPg {margin:2%; padding:10px;}
 /*------------HEADER-------------*/
 header div.logo {
 	display:flex;
@@ -100,6 +91,7 @@ article.banner {
 .temple figure figcaption {text-align:center;margin:2%;color:#fff;}
 
 /*-----temple gallery-------*/
+
 .container .mySlides img {width:100%;vertical-align: middle;}
 .container {position: relative;}
 .mySlides {display:none;} /*hide them by default*/
@@ -168,8 +160,27 @@ article.banner {
   .active,.demo:hover {
 	opacity: 1;
   }
-  
+  .container {margin: 10px 2%;}
 
+  #topBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color:#7ABFB3; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+	background-color: #555; /* Add a dark-grey background on hover */
+  }
   /*----General form styles------*/
 
   form fieldset {
@@ -193,7 +204,30 @@ article.banner {
 		font-size: .9rem;
 	}
 /*----reservations page styles-----*/
-	#state, #country{
+
+
+form fieldset {
+	margin:2rem 2%;
+	border:1px solid  #4d5922;
+	border-radius:10px;
+	padding:.5rem 2%;
+}
+
+
+main label input {
+	-webkit-appearance: none;
+    display:block;
+    font-size:1rem;
+    border:solid 1px #999;
+    border-radius: 4px;
+	padding: .75rem;
+	margin: .5rem 0;
+    color:#555;
+    width:100%;
+    background-color: rgba(0,0,0,0.1)
+}
+
+#state, #country{
 		-webkit-appearance: none;
 		display:block;
 		margin: .5rem 0;
@@ -204,6 +238,34 @@ article.banner {
 		width:50%;
 		min-width:200px;
 	}
+	form textarea {
+		display:block;
+		font-size:1rem;
+		margin-top:10px;
+		min-height:110px;
+		width:100%;
+		min-width:200px;
+		 
+	}
+
+	#submitBtn input{
+		width:90%;
+		height:50px;
+		margin:auto;
+		display:block;
+		margin-bottom:4%;
+		background-color:#4E84A6;
+		color:#fff;
+		font-size:1.3rem;
+		font-weight:bold;
+	}
+
+	#submitBtn input:hover {
+		cursor:pointer;
+		font-size:1.5rem;
+		font-weight:bolder;
+	}
+
 
 	/*----services page styles----*/
 
@@ -247,26 +309,55 @@ article.banner {
 		text-align:justify;
 	}
 /*-----------contact page styles-----------*/
-
-
-
 .contactPg {
 	padding:2%;
 }
 
-.contactFrm {
-	display:flex;
-	flex-direction:column;
-	align-items: center;
+.flex-outer {margin:0; padding:0;}
+
+.flex-outer li,.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flex-outer > li > label, .flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+
+}
+ 
+.flex-outer > li > label + *,.flex-inner {
+  flex: 1 0 220px;
 }
 
-.contactFrm fieldset legend {
-	padding: 2%;
+.flex-outer li {margin-top:2%;}
+
+.flex-outer li input {
+	font-size:1.3rem;
+	margin-top:2%;
 }
 
-.contact {
-	margin-top: 2%;
-	padding:10px 2%;}
+.flex-outer li button {
+	margin-left: auto;
+	padding: 8px 16px;
+	border: none;
+	background: #333;
+	color: #f2f2f2;
+	text-transform: uppercase;
+	letter-spacing: .09em;
+	border-radius: 2px;
+  }
+
+  .flex-inner li {
+	width: 100px;
+  }
+  .flex-inner {
+	justify-content: space-between;
+  }
+.hdqrts {margin:auto; display:block;text-align:center;}
+
+.responsive-container img {width:100%; margin-top:5%;}
+
 
 /*-----------FOOTER--------------*/
 

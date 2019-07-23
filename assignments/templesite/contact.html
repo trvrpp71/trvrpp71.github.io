@@ -43,9 +43,8 @@
         <p>The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.</p> <p>The owner-operated company caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by the company </p>
         <p>For additional information please feel free to contact us via the contact form below.</p>
 
-        <section class="contactFrm">
-          <form>
-          <fieldset>
+        <section class="clearfix">
+          <!--<form class="form">
             <legend>Request Contact</legend>
             <label class="contact">Full name <input type="text" name="name" pattern="[A-Za]" required></label>
             <label class="contact">Email <input type ="email" name="email" required placeholder="name@email.com"></label>
@@ -55,13 +54,57 @@
             <label class="sbs"><input type="checkbox" name="check" value="phone">Phone</label>
             <label class="sbs"><input type="checkbox" name="check" value="">Doesnt' Matter</label>
             <textarea name="notes" placeholder="Add any specific details here about the purpose of the contact."></textarea>
-          </fieldset>
           <div id="submitBtn">
             <input type="submit" name="submit" value="Request Contact">
           </div>
+          </form>-->
+
+          <form>
+            <ul class="flex-outer">
+              <li>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter your first name here">
+              </li>
+              <li>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter your last name here">
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email here">
+              </li>
+              <li>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Enter your phone here">
+              </li>
+              <li>
+                <label for="message">Message</label>
+                <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+              </li>
+              <li>
+                <p>Preferred Contact Method</p>
+                  <!-- list items here -->
+                  <ul class="flex-inner">
+                    <li>
+                      <input type="checkbox" id="phone"">
+                      <label for="phone">Phone</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="email">
+                      <label for="email">Email</label>
+                    </li>
+                  </ul>
+              </li>
+              <li>
+                <button type="submit">Submit</button>
+              </li>
+            </ul>
           </form>
         </section>
-
+        <div class="hdqrts">
+          <p>Temple Inns & Suites Headquarters</p>
+          <p></p>4800 Montgomery Ln #300<br> Bethesda, MD 20814 
+        </div>
         <div class = "map-wrapper">
           <div class = "responsive-container">
               <img src="https://www.mapquestapi.com/staticmap/v5/map?&locations=38.9831851,-77.0951617&zoom=14&key=c2SAQcIxHxnB0UUjxYKfYy9b18smGm6N" alt="Location Map">
