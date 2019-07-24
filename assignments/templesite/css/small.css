@@ -61,12 +61,21 @@ nav ul li.active a {background-color:rgba(0,0,0,0.2)}
 
 /*------------MAIN---------------*/
 
-article.banner {
-	max-width:75%;
+.indexContainer {
+	position: relative;
+	text-align: center;
+}
+
+.indexContainer img{width:100%;}
+
+.banner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width:50%;
 	text-align: center;
 	border:1px solid #000;
-	margin:auto;
-	margin-top:15%;
 	background-color:#fff;
 	opacity: .8;
 	color:#000;
@@ -74,21 +83,20 @@ article.banner {
 	padding: 10px;
 	background-clip: content-box;
 }
+.banner h3 {font-size:3vw;}
+.banner h1 {font-size: 5vw;}
+.banner img {width:auto;padding-bottom:2%;}
 
-.banner h1 {font-size:2.5rem;}
 
 .book {
-	margin-top:5%;
+	margin-top:2%;
+	margin-bottom:3%;
 	width:100%;
 	text-align:center;
+	cursor:pointer;
 }
 
-.temple figure img, .templeImg figure img {
-	width:100%;
-	border:1px solid black;
-	box-shadow: 5px 5px 10px #000;
-}
-.temple figure figcaption {text-align:center;margin:2%;color:#fff;}
+
 
 /*-----temple gallery-------*/
 
@@ -183,7 +191,7 @@ article.banner {
   }
 
 /*----reservations page styles-----*/
-
+main h3 {margin:2%;}
 
 form fieldset {
 	margin:2rem 2%;
@@ -217,8 +225,8 @@ form fieldset input, form fieldset textarea, form fieldset select {
 		font-size:1rem;
 		border:solid 1px #999;
 		border-radius: 4px;
-		width:50%;
-		min-width:200px;
+		width:100%;
+		
 	}
 	form textarea {
 		display:block;
@@ -291,10 +299,8 @@ form fieldset input, form fieldset textarea, form fieldset select {
 		text-align:justify;
 	}
 /*-----------contact page styles-----------*/
-.contactPg {
-	padding:2%;
-}
 
+.contactPg h3 {margin:0;padding:0;}
 .flex-outer {margin:0; padding:0;}
 
 .flex-outer li,.flex-inner {
@@ -320,7 +326,8 @@ form fieldset input, form fieldset textarea, form fieldset select {
 }
 
 .flex-outer li button {
-	margin-left: auto;
+	margin-left: 50%;
+	transform: translate(-50%,0);
 	padding: 8px 16px;
 	border: none;
 	background: #333;
@@ -334,7 +341,7 @@ form fieldset input, form fieldset textarea, form fieldset select {
 	width: 100px;
   }
   .flex-inner {
-	justify-content: space-between;
+	justify-content:flex-start;
   }
 .hdqrts {margin:auto; display:block;text-align:center;}
 
