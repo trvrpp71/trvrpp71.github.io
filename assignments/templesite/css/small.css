@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6 {font-family:'Lato', sans-serif;}
 /*------------HEADER-------------*/
 header div.logo {
 	display:flex;
+	flex-direction:column;
 	justify-content: flex-start;
 	align-items: center;
 }
@@ -21,8 +22,9 @@ header div.logo h1 {
 	margin:2%;
 	padding:2%;
 	font-size:1.2em;
+	text-align: center;
 }
-header div.logo img{margin:10px 2%;}
+header div.logo img{margin-top:20px;width:25%;}
 
 /*----------NAVIGATION-----------*/
 nav {
