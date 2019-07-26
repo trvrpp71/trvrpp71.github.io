@@ -37,17 +37,17 @@
       </nav>
 
     
-      <main>
+      <main class="res_form">
         <h3>Reserve Your Room</h3>
-        <form class='reserve' method="get" action="thanks.html">
+        <form class='reserve' method="get" action="thx.html">
           <fieldset>
             <legend>Guest Information</legend>
             <div>
-              <input id='lname' type="text" name="lname" pattern="[A-Za]" required>
+              <input id='lname' type="text" name="lname" required>
               <label for='lname'>Last Name </label>
             </div>
             <div>
-              <input id='fname' type="text" name="fname" pattern="[A-Za]" required>
+              <input id='fname' type="text" name="fname">
               <label for='fname'>First Name </label>
             </div>
             <div>
@@ -390,11 +390,11 @@
             <legend>Room & Services</legend>
             </div>
             <div>
-                <input id='numRoom'type="text" name="num" pattern="[0-9]" required>
+                <input id='numRoom'type="text" name="num" pattern="[0-9]+" required>
                 <label for='numRoom'>Number of Guests</label>
             </div>
             <div>
-              <input id='numPeople' type="text" name="num" pattern="[0-9]" required>
+              <input id='numPeople' type="text" name="num" pattern="[0-9]+" required>
               <label for='numRoom'>How Many Rooms?</label>
             </div>
             <div>

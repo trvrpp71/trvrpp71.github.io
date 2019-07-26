@@ -158,6 +158,11 @@ function showSlides(n) {
             var wtP3 = document.createElement('p'); //humidity
             var wtP4 = document.createElement('p'); //description
 
+            wtP1.setAttribute('class','wtP1');
+            wtP2.setAttribute('class','wtP2');
+            wtP3.setAttribute('class','wtP3');
+            wtP4.setAttribute('class','wtP4');
+
             wtH3.textContent = "Weather summary for the Area";
             wtP1.textContent = "Currently:" + Math.round(weatherInfo.main.temp)+ "\u00B0" +"F";
             wtP2.textContent = "High:" + Math.round(weatherInfo.main.temp_max) + "\u00B0" +"F";

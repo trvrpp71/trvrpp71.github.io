@@ -2,7 +2,10 @@
 
 /* 35em is also 560px (if basefont is 16px) */
 @media only screen and (min-width: 35rem) {
-
+    .res_form, .contactPg, .serv1{
+        max-width: 64rem;
+        margin:auto;
+    }
 
     /*----------- BODY --------------*/
     
@@ -29,7 +32,7 @@
     /*----------- MAIN --------------*/
    .banner {max-width:50%;}
 
-   .contact2 {max-width:650px;}
+   .contact2 {max-width:650px;margin:auto;}
    .responsive-container img {
        width:35%; 
        margin-top:5%;
@@ -37,8 +40,19 @@
         left:50%;
         transform: translate(-50%, 0);
     }
+    .serviceImg_row {
+        flex-direction:row;
 
+    }
+    .serviceImg_col {
+        flex: 33.33%;
+        padding:5px;
+    }
 
+    .serviceImg_col img {
+        width:100%;
+        box-shadow: 5px 5px 10px black;
+    }
     /*----------- FOOTER --------------*/
     
    
