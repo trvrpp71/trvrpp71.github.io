@@ -10,7 +10,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*-------------BODY--------------*/
 body {font-family: 'Nunito', sans-serif;}
 h1, h2, h3, h4, h5, h6 {font-family:'Lato', sans-serif;}
-.supInfo, .contactPg, .thx, .rtn, .attributes {margin:2%; padding:10px;}
+.supInfo, .contactPg, .thx, .rtn, .attributes, .attributes p{margin:2%; padding:10px;}
 /*------------HEADER-------------*/
 header div.logo {
 	display:flex;
