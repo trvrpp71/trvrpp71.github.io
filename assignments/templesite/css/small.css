@@ -280,9 +280,7 @@ form fieldset input, form fieldset textarea, form fieldset select {
 		width:200px;
 		text-align:center;
 	}
-	.flexP {
 	
-	}
 	.amenities .serBanner {width:100%; opacity: .5; padding:0; margin:0;}
 	.vertical img{width:25%;}
 
@@ -366,7 +364,7 @@ footer {
  }
  footer p{margin-top:5px; padding:0;}
 	 
- }
+ 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
