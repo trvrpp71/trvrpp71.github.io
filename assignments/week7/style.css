@@ -1,0 +1,170 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-front {
+  border: 1px solid grey;
+  margin: 20px;
+  padding: 0.5em;
+  height: 420px;
+  width: 300px;
+  top: 50px;
+  left: 50px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 4px grey;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.number {
+  text-align: center;
+  font-size: 30px;
+}
+.number > .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.ellipse {
+  fill: white;
+}
+
+.circle1 {
+  fill: black;
+}
+
+@supports not (display: grid) {
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-between;
+    height: 100%;
+  }
+
+  .cells {
+    flex: 1;
+    text-align: center;
+  }
+
+  .col-1 {
+    flex: 0 0 12.5%;
+  }
+
+  .col-2 {
+    flex: 0 0 25%;
+  }
+
+  .col-3 {
+    flex: 0 0 37.5%;
+  }
+
+  .col-4 {
+    flex: 0 0 50%;
+  }
+
+  .col-5 {
+    flex: 0 0 62.5%;
+  }
+
+  .col-6 {
+    flex: 0 0 75%;
+  }
+
+  .col-7 {
+    flex: 0 0 87.5%;
+  }
+
+  .col-8 {
+    flex: 0 0 100%;
+  }
+
+  .offset-1 {
+    margin-left: 12.5%;
+  }
+
+  .offset-2 {
+    margin-left: 25%;
+  }
+
+  .offset-3 {
+    margin-left: 37.5%;
+  }
+
+  .offset-4 {
+    margin-left: 50%;
+  }
+
+  .offset-5 {
+    margin-left: 62.5%;
+  }
+
+  .offset-6 {
+    margin-left: 75%;
+  }
+
+  .offset-7 {
+    margin-left: 87.5%;
+  }
+
+  .offset-8 {
+    margin-left: 100%;
+  }
+}
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    width: 285px;
+    height: 399px;
+    grid-template-columns: 12.5% repeat(3, 1fr) 12.5%;
+    grid-template-rows: repeat(4, 1fr);
+    grid: gap 5px;
+  }
+  .grid > .cells:nth-child(2) {
+    align-self: center;
+  }
+  .grid > .cells:nth-child(3) {
+    grid-column-start: 4;
+    align-self: center;
+  }
+  .grid > .cells:nth-child(4) {
+    grid-column-start: 2;
+    grid-row: 2/span 2;
+    align-self: center;
+  }
+  .grid > .cells:nth-child(5) {
+    grid-column-start: 3;
+    grid-row: 2/span 2;
+  }
+  .grid > .cells:nth-child(6) {
+    grid-column-start: 4;
+    grid-row: 2/span 2;
+    align-self: center;
+  }
+  .grid > .cells:nth-child(7) {
+    grid-column-start: 2;
+    grid-row: 4;
+    align-self: center;
+  }
+  .grid > .cells:nth-child(8) {
+    grid-column-start: 4;
+    grid-row-start: 4;
+    align-self: center;
+  }
+  .grid > .cells:nth-child(9) {
+    grid-column-start: 5;
+    grid-row-start: 4;
+    align-self: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
